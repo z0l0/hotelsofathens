@@ -1,0 +1,202 @@
+{
+  "id": "syntagma",
+  "name": "Syntagma",
+  "emoji": "🏛️",
+  "tagline": "Central & Connected",
+  "description": "Athens' main square, home to the Parliament building and changing of the guard. Excellent metro connections and upscale shopping on Ermou Street.",
+  "avgPrice": 180,
+  "walkToAcropolis": "12-15 min",
+  "vibe": [
+    "Central",
+    "Business",
+    "Upscale"
+  ],
+  "bestFor": [
+    "Business travelers",
+    "Luxury seekers",
+    "First-timers"
+  ],
+  "hotelCount": 5,
+  "hotels": [
+    {
+      "id": "hotel-grande-bretagne-syntagma",
+      "slug": "hotel-grande-bretagne-athens",
+      "neighborhood": "syntagma",
+      "neighborhoodName": "Syntagma",
+      "distanceToAcropolis": "12-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Hotel Grande Bretagne",
+      "starRating": 5,
+      "pricePerNight": 450,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 5,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Restaurant",
+        "Gym",
+        "Concierge"
+      ],
+      "bestFor": [
+        "Luxury",
+        "Special occasions",
+        "Business"
+      ],
+      "overview": "Athens' most iconic luxury hotel overlooking Syntagma Square. Historic grandeur with world-class service.",
+      "pros": [
+        "Legendary hotel",
+        "Stunning rooftop",
+        "Impeccable service"
+      ],
+      "cons": [
+        "Very expensive",
+        "Formal atmosphere"
+      ]
+    },
+    {
+      "id": "king-george-athens-syntagma",
+      "slug": "king-george-athens-athens",
+      "neighborhood": "syntagma",
+      "neighborhoodName": "Syntagma",
+      "distanceToAcropolis": "12-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "King George Athens",
+      "starRating": 5,
+      "pricePerNight": 380,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 5,
+      "amenities": [
+        "Restaurant",
+        "Spa",
+        "Butler Service",
+        "Gym"
+      ],
+      "bestFor": [
+        "Luxury",
+        "Couples",
+        "Fine dining"
+      ],
+      "overview": "Boutique luxury hotel next to Grande Bretagne with intimate atmosphere and Tudor Hall restaurant.",
+      "pros": [
+        "Intimate luxury",
+        "Amazing restaurant",
+        "Personal service"
+      ],
+      "cons": [
+        "Expensive",
+        "Smaller than GB"
+      ]
+    },
+    {
+      "id": "njv-plaza-athens-syntagma",
+      "slug": "njv-athens-plaza-athens",
+      "neighborhood": "syntagma",
+      "neighborhoodName": "Syntagma",
+      "distanceToAcropolis": "12-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "NJV Athens Plaza",
+      "starRating": 5,
+      "pricePerNight": 220,
+      "hasAcropolisView": true,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "Gym",
+        "Business Center"
+      ],
+      "bestFor": [
+        "Business",
+        "Central location",
+        "Comfort"
+      ],
+      "overview": "Modern luxury hotel on Syntagma Square. Excellent for business travelers and those wanting central location.",
+      "pros": [
+        "Prime location",
+        "Modern rooms",
+        "Good value luxury"
+      ],
+      "cons": [
+        "Less character",
+        "No rooftop"
+      ]
+    },
+    {
+      "id": "electra-hotel-athens-syntagma",
+      "slug": "electra-hotel-athens-athens",
+      "neighborhood": "syntagma",
+      "neighborhoodName": "Syntagma",
+      "distanceToAcropolis": "12-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Electra Hotel Athens",
+      "starRating": 4,
+      "pricePerNight": 140,
+      "hasAcropolisView": false,
+      "hasRooftopBar": true,
+      "rooftopRating": 3,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "WiFi",
+        "Breakfast"
+      ],
+      "bestFor": [
+        "Mid-range",
+        "Shopping",
+        "Convenience"
+      ],
+      "overview": "Comfortable hotel on Ermou shopping street. Great base for exploring with rooftop restaurant.",
+      "pros": [
+        "Shopping location",
+        "Good breakfast",
+        "Friendly staff"
+      ],
+      "cons": [
+        "No Acropolis view",
+        "Busy street"
+      ]
+    },
+    {
+      "id": "arethusa-hotel-syntagma",
+      "slug": "arethusa-hotel-athens",
+      "neighborhood": "syntagma",
+      "neighborhoodName": "Syntagma",
+      "distanceToAcropolis": "12-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Arethusa Hotel",
+      "starRating": 3,
+      "pricePerNight": 90,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Budget",
+        "Central",
+        "Practical"
+      ],
+      "overview": "Simple, clean hotel steps from Syntagma metro. Perfect budget base for sightseeing.",
+      "pros": [
+        "Great location",
+        "Clean rooms",
+        "Affordable"
+      ],
+      "cons": [
+        "Basic amenities",
+        "No views"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1197 @@
+{
+  "lastUpdated": "2026-02-02",
+  "currency": "EUR",
+  "totalHotels": 33,
+  "avgPrice": 143,
+  "priceStats": {
+    "budget": {
+      "range": "Under €80",
+      "count": 7
+    },
+    "midRange": {
+      "range": "€80-150",
+      "count": 13
+    },
+    "upscale": {
+      "range": "€150-250",
+      "count": 9
+    },
+    "luxury": {
+      "range": "€250+",
+      "count": 4
+    }
+  },
+  "hotels": [
+    {
+      "id": "electra-palace-athens-plaka",
+      "slug": "electra-palace-athens-athens",
+      "neighborhood": "plaka",
+      "neighborhoodName": "Plaka",
+      "distanceToAcropolis": "5-10 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Electra Palace Athens",
+      "starRating": 5,
+      "pricePerNight": 280,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 5,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Restaurant",
+        "Gym"
+      ],
+      "bestFor": [
+        "Luxury",
+        "Couples",
+        "Views"
+      ],
+      "overview": "Iconic luxury hotel in the heart of Plaka with stunning rooftop pool and Acropolis views. Neoclassical elegance meets modern comfort.",
+      "pros": [
+        "Rooftop pool with Acropolis view",
+        "Prime Plaka location",
+        "Excellent service"
+      ],
+      "cons": [
+        "Premium pricing",
+        "Can be busy"
+      ]
+    },
+    {
+      "id": "plaka-hotel-plaka",
+      "slug": "plaka-hotel-athens",
+      "neighborhood": "plaka",
+      "neighborhoodName": "Plaka",
+      "distanceToAcropolis": "5-10 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Plaka Hotel",
+      "starRating": 3,
+      "pricePerNight": 95,
+      "hasAcropolisView": true,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Budget",
+        "Location",
+        "Solo travelers"
+      ],
+      "overview": "Charming budget-friendly hotel in the heart of Plaka. Simple rooms with great location and friendly staff.",
+      "pros": [
+        "Unbeatable location",
+        "Great value",
+        "Rooftop terrace"
+      ],
+      "cons": [
+        "Basic rooms",
+        "No pool"
+      ]
+    },
+    {
+      "id": "ava-hotel-athens-plaka",
+      "slug": "ava-hotel-athens-athens",
+      "neighborhood": "plaka",
+      "neighborhoodName": "Plaka",
+      "distanceToAcropolis": "5-10 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "AVA Hotel Athens",
+      "starRating": 4,
+      "pricePerNight": 180,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 4,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "WiFi",
+        "Concierge"
+      ],
+      "bestFor": [
+        "Boutique",
+        "Couples",
+        "Design lovers"
+      ],
+      "overview": "Stylish boutique hotel with contemporary design and Acropolis views. Perfect blend of comfort and aesthetics.",
+      "pros": [
+        "Beautiful design",
+        "Great rooftop",
+        "Quiet location"
+      ],
+      "cons": [
+        "Small rooms",
+        "Limited amenities"
+      ]
+    },
+    {
+      "id": "herodion-hotel-plaka",
+      "slug": "herodion-hotel-athens",
+      "neighborhood": "plaka",
+      "neighborhoodName": "Plaka",
+      "distanceToAcropolis": "5-10 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Herodion Hotel",
+      "starRating": 4,
+      "pricePerNight": 165,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 4,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "Garden",
+        "WiFi"
+      ],
+      "bestFor": [
+        "Families",
+        "Couples",
+        "History buffs"
+      ],
+      "overview": "Elegant hotel at the foot of the Acropolis with beautiful garden and rooftop restaurant.",
+      "pros": [
+        "Steps from Acropolis",
+        "Lovely garden",
+        "Family-friendly"
+      ],
+      "cons": [
+        "Dated decor in some rooms"
+      ]
+    },
+    {
+      "id": "central-hotel-athens-plaka",
+      "slug": "central-athens-hotel-athens",
+      "neighborhood": "plaka",
+      "neighborhoodName": "Plaka",
+      "distanceToAcropolis": "5-10 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Central Athens Hotel",
+      "starRating": 3,
+      "pricePerNight": 85,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Budget",
+        "Solo travelers",
+        "Short stays"
+      ],
+      "overview": "Clean and comfortable budget option in central Plaka. No frills but excellent value.",
+      "pros": [
+        "Great price",
+        "Central location",
+        "Clean rooms"
+      ],
+      "cons": [
+        "Basic amenities",
+        "No views"
+      ]
+    },
+    {
+      "id": "a-for-athens-monastiraki",
+      "slug": "a-for-athens-athens",
+      "neighborhood": "monastiraki",
+      "neighborhoodName": "Monastiraki",
+      "distanceToAcropolis": "8-12 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "A for Athens",
+      "starRating": 4,
+      "pricePerNight": 150,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 5,
+      "amenities": [
+        "Rooftop Bar",
+        "Restaurant",
+        "WiFi"
+      ],
+      "bestFor": [
+        "Nightlife",
+        "Young travelers",
+        "Views"
+      ],
+      "overview": "Hip hotel right on Monastiraki Square with the best rooftop bar in Athens. Unbeatable Acropolis views.",
+      "pros": [
+        "Famous rooftop bar",
+        "Perfect location",
+        "Trendy vibe"
+      ],
+      "cons": [
+        "Can be noisy",
+        "Small rooms"
+      ]
+    },
+    {
+      "id": "360-degrees-hotel-monastiraki",
+      "slug": "360-degrees-hotel-athens",
+      "neighborhood": "monastiraki",
+      "neighborhoodName": "Monastiraki",
+      "distanceToAcropolis": "8-12 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "360 Degrees Hotel",
+      "starRating": 4,
+      "pricePerNight": 140,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 4,
+      "amenities": [
+        "Rooftop",
+        "Bar",
+        "WiFi",
+        "Breakfast"
+      ],
+      "bestFor": [
+        "Views",
+        "Couples",
+        "Photographers"
+      ],
+      "overview": "Modern hotel with panoramic rooftop offering 360-degree views of Athens landmarks.",
+      "pros": [
+        "Incredible views",
+        "Modern rooms",
+        "Great breakfast"
+      ],
+      "cons": [
+        "Street noise",
+        "Busy area"
+      ]
+    },
+    {
+      "id": "attalos-hotel-monastiraki",
+      "slug": "attalos-hotel-athens",
+      "neighborhood": "monastiraki",
+      "neighborhoodName": "Monastiraki",
+      "distanceToAcropolis": "8-12 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Attalos Hotel",
+      "starRating": 3,
+      "pricePerNight": 75,
+      "hasAcropolisView": true,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Rooftop Terrace",
+        "Breakfast",
+        "WiFi"
+      ],
+      "bestFor": [
+        "Budget",
+        "Backpackers",
+        "Location"
+      ],
+      "overview": "Classic budget hotel with rooftop terrace views. Simple but clean with unbeatable location.",
+      "pros": [
+        "Budget-friendly",
+        "Rooftop views",
+        "Helpful staff"
+      ],
+      "cons": [
+        "Basic rooms",
+        "Old building"
+      ]
+    },
+    {
+      "id": "ob-boutique-hotel-athens-monastiraki",
+      "slug": "ob-athens-boutique-hotel-athens",
+      "neighborhood": "monastiraki",
+      "neighborhoodName": "Monastiraki",
+      "distanceToAcropolis": "8-12 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "O&B Athens Boutique Hotel",
+      "starRating": 4,
+      "pricePerNight": 170,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 4,
+      "amenities": [
+        "Spa",
+        "Restaurant",
+        "Bar",
+        "Gym"
+      ],
+      "bestFor": [
+        "Boutique",
+        "Couples",
+        "Wellness"
+      ],
+      "overview": "Elegant boutique hotel combining neoclassical architecture with modern luxury.",
+      "pros": [
+        "Beautiful building",
+        "Excellent spa",
+        "Quiet rooms"
+      ],
+      "cons": [
+        "Pricey restaurant"
+      ]
+    },
+    {
+      "id": "athens-backpackers-monastiraki",
+      "slug": "athens-backpackers-athens",
+      "neighborhood": "monastiraki",
+      "neighborhoodName": "Monastiraki",
+      "distanceToAcropolis": "8-12 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Athens Backpackers",
+      "starRating": 2,
+      "pricePerNight": 35,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 3,
+      "amenities": [
+        "Rooftop Bar",
+        "Kitchen",
+        "WiFi"
+      ],
+      "bestFor": [
+        "Backpackers",
+        "Budget",
+        "Social"
+      ],
+      "overview": "Legendary backpacker hostel with famous rooftop bar. Social atmosphere and great location.",
+      "pros": [
+        "Super cheap",
+        "Great rooftop",
+        "Social vibe"
+      ],
+      "cons": [
+        "Hostel dorms",
+        "Can be loud"
+      ]
+    },
+    {
+      "id": "hotel-grande-bretagne-syntagma",
+      "slug": "hotel-grande-bretagne-athens",
+      "neighborhood": "syntagma",
+      "neighborhoodName": "Syntagma",
+      "distanceToAcropolis": "12-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Hotel Grande Bretagne",
+      "starRating": 5,
+      "pricePerNight": 450,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 5,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Restaurant",
+        "Gym",
+        "Concierge"
+      ],
+      "bestFor": [
+        "Luxury",
+        "Special occasions",
+        "Business"
+      ],
+      "overview": "Athens' most iconic luxury hotel overlooking Syntagma Square. Historic grandeur with world-class service.",
+      "pros": [
+        "Legendary hotel",
+        "Stunning rooftop",
+        "Impeccable service"
+      ],
+      "cons": [
+        "Very expensive",
+        "Formal atmosphere"
+      ]
+    },
+    {
+      "id": "king-george-athens-syntagma",
+      "slug": "king-george-athens-athens",
+      "neighborhood": "syntagma",
+      "neighborhoodName": "Syntagma",
+      "distanceToAcropolis": "12-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "King George Athens",
+      "starRating": 5,
+      "pricePerNight": 380,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 5,
+      "amenities": [
+        "Restaurant",
+        "Spa",
+        "Butler Service",
+        "Gym"
+      ],
+      "bestFor": [
+        "Luxury",
+        "Couples",
+        "Fine dining"
+      ],
+      "overview": "Boutique luxury hotel next to Grande Bretagne with intimate atmosphere and Tudor Hall restaurant.",
+      "pros": [
+        "Intimate luxury",
+        "Amazing restaurant",
+        "Personal service"
+      ],
+      "cons": [
+        "Expensive",
+        "Smaller than GB"
+      ]
+    },
+    {
+      "id": "njv-plaza-athens-syntagma",
+      "slug": "njv-athens-plaza-athens",
+      "neighborhood": "syntagma",
+      "neighborhoodName": "Syntagma",
+      "distanceToAcropolis": "12-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "NJV Athens Plaza",
+      "starRating": 5,
+      "pricePerNight": 220,
+      "hasAcropolisView": true,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "Gym",
+        "Business Center"
+      ],
+      "bestFor": [
+        "Business",
+        "Central location",
+        "Comfort"
+      ],
+      "overview": "Modern luxury hotel on Syntagma Square. Excellent for business travelers and those wanting central location.",
+      "pros": [
+        "Prime location",
+        "Modern rooms",
+        "Good value luxury"
+      ],
+      "cons": [
+        "Less character",
+        "No rooftop"
+      ]
+    },
+    {
+      "id": "electra-hotel-athens-syntagma",
+      "slug": "electra-hotel-athens-athens",
+      "neighborhood": "syntagma",
+      "neighborhoodName": "Syntagma",
+      "distanceToAcropolis": "12-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Electra Hotel Athens",
+      "starRating": 4,
+      "pricePerNight": 140,
+      "hasAcropolisView": false,
+      "hasRooftopBar": true,
+      "rooftopRating": 3,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "WiFi",
+        "Breakfast"
+      ],
+      "bestFor": [
+        "Mid-range",
+        "Shopping",
+        "Convenience"
+      ],
+      "overview": "Comfortable hotel on Ermou shopping street. Great base for exploring with rooftop restaurant.",
+      "pros": [
+        "Shopping location",
+        "Good breakfast",
+        "Friendly staff"
+      ],
+      "cons": [
+        "No Acropolis view",
+        "Busy street"
+      ]
+    },
+    {
+      "id": "arethusa-hotel-syntagma",
+      "slug": "arethusa-hotel-athens",
+      "neighborhood": "syntagma",
+      "neighborhoodName": "Syntagma",
+      "distanceToAcropolis": "12-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Arethusa Hotel",
+      "starRating": 3,
+      "pricePerNight": 90,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Budget",
+        "Central",
+        "Practical"
+      ],
+      "overview": "Simple, clean hotel steps from Syntagma metro. Perfect budget base for sightseeing.",
+      "pros": [
+        "Great location",
+        "Clean rooms",
+        "Affordable"
+      ],
+      "cons": [
+        "Basic amenities",
+        "No views"
+      ]
+    },
+    {
+      "id": "st-george-lycabettus-kolonaki",
+      "slug": "st-george-lycabettus-athens",
+      "neighborhood": "kolonaki",
+      "neighborhoodName": "Kolonaki",
+      "distanceToAcropolis": "15-20 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "St. George Lycabettus",
+      "starRating": 5,
+      "pricePerNight": 250,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 5,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Restaurant",
+        "Gym"
+      ],
+      "bestFor": [
+        "Luxury",
+        "Views",
+        "Quiet"
+      ],
+      "overview": "Hillside luxury hotel with stunning city views. Rooftop pool and Le Grand Balcon restaurant.",
+      "pros": [
+        "Amazing views",
+        "Rooftop pool",
+        "Quiet area"
+      ],
+      "cons": [
+        "Uphill walk",
+        "Away from sites"
+      ]
+    },
+    {
+      "id": "periscope-hotel-kolonaki",
+      "slug": "periscope-hotel-athens",
+      "neighborhood": "kolonaki",
+      "neighborhoodName": "Kolonaki",
+      "distanceToAcropolis": "15-20 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Periscope Hotel",
+      "starRating": 4,
+      "pricePerNight": 160,
+      "hasAcropolisView": false,
+      "hasRooftopBar": true,
+      "rooftopRating": 3,
+      "amenities": [
+        "Rooftop",
+        "Bar",
+        "WiFi",
+        "Breakfast"
+      ],
+      "bestFor": [
+        "Design",
+        "Boutique",
+        "Hip"
+      ],
+      "overview": "Design-forward boutique hotel in fashionable Kolonaki. Modern aesthetic with rooftop terrace.",
+      "pros": [
+        "Great design",
+        "Trendy area",
+        "Good breakfast"
+      ],
+      "cons": [
+        "Small rooms",
+        "No major views"
+      ]
+    },
+    {
+      "id": "coco-mat-bc-athens-kolonaki",
+      "slug": "coco-mat-athens-bc-athens",
+      "neighborhood": "kolonaki",
+      "neighborhoodName": "Kolonaki",
+      "distanceToAcropolis": "15-20 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Coco-Mat Athens BC",
+      "starRating": 4,
+      "pricePerNight": 180,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Spa",
+        "Restaurant",
+        "Gym",
+        "Organic Bedding"
+      ],
+      "bestFor": [
+        "Wellness",
+        "Eco-conscious",
+        "Sleep quality"
+      ],
+      "overview": "Wellness-focused hotel featuring Coco-Mat's famous organic mattresses and sustainable design.",
+      "pros": [
+        "Best beds in Athens",
+        "Eco-friendly",
+        "Great spa"
+      ],
+      "cons": [
+        "No rooftop",
+        "Quiet area"
+      ]
+    },
+    {
+      "id": "kolonaki-townhouse-kolonaki",
+      "slug": "kolonaki-townhouse-athens",
+      "neighborhood": "kolonaki",
+      "neighborhoodName": "Kolonaki",
+      "distanceToAcropolis": "15-20 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Kolonaki Townhouse",
+      "starRating": 3,
+      "pricePerNight": 120,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "Garden"
+      ],
+      "bestFor": [
+        "Boutique",
+        "Quiet",
+        "Local feel"
+      ],
+      "overview": "Charming small hotel in residential Kolonaki. Feels like staying at a friend's elegant home.",
+      "pros": [
+        "Charming atmosphere",
+        "Quiet street",
+        "Personal service"
+      ],
+      "cons": [
+        "Limited amenities",
+        "No views"
+      ]
+    },
+    {
+      "id": "pallas-athena-grecotel-psyrri",
+      "slug": "pallas-athena-grecotel-athens",
+      "neighborhood": "psyrri",
+      "neighborhoodName": "Psyrri",
+      "distanceToAcropolis": "10-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Pallas Athena Grecotel",
+      "starRating": 5,
+      "pricePerNight": 200,
+      "hasAcropolisView": false,
+      "hasRooftopBar": true,
+      "rooftopRating": 4,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "Spa",
+        "Art Gallery"
+      ],
+      "bestFor": [
+        "Art lovers",
+        "Design",
+        "Nightlife"
+      ],
+      "overview": "Art-focused luxury hotel with rotating exhibitions and vibrant design. In the heart of creative Psyrri.",
+      "pros": [
+        "Unique art concept",
+        "Great location",
+        "Excellent restaurant"
+      ],
+      "cons": [
+        "No Acropolis view",
+        "Can be noisy"
+      ]
+    },
+    {
+      "id": "athens-tiare-hotel-psyrri",
+      "slug": "athens-tiare-hotel-athens",
+      "neighborhood": "psyrri",
+      "neighborhoodName": "Psyrri",
+      "distanceToAcropolis": "10-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Athens Tiare Hotel",
+      "starRating": 4,
+      "pricePerNight": 130,
+      "hasAcropolisView": false,
+      "hasRooftopBar": true,
+      "rooftopRating": 3,
+      "amenities": [
+        "Rooftop",
+        "Bar",
+        "WiFi",
+        "Breakfast"
+      ],
+      "bestFor": [
+        "Nightlife",
+        "Young travelers",
+        "Value"
+      ],
+      "overview": "Modern hotel in the heart of Athens' nightlife district. Great rooftop for evening drinks.",
+      "pros": [
+        "Nightlife location",
+        "Modern rooms",
+        "Good value"
+      ],
+      "cons": [
+        "Street noise",
+        "Basic breakfast"
+      ]
+    },
+    {
+      "id": "innathens-psyrri",
+      "slug": "innathens-athens",
+      "neighborhood": "psyrri",
+      "neighborhoodName": "Psyrri",
+      "distanceToAcropolis": "10-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "InnAthens",
+      "starRating": 4,
+      "pricePerNight": 110,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "WiFi",
+        "Breakfast"
+      ],
+      "bestFor": [
+        "Foodies",
+        "Local experience",
+        "Value"
+      ],
+      "overview": "Boutique hotel with excellent restaurant serving modern Greek cuisine. Perfect for food lovers.",
+      "pros": [
+        "Great restaurant",
+        "Authentic area",
+        "Good value"
+      ],
+      "cons": [
+        "No rooftop",
+        "Gritty neighborhood"
+      ]
+    },
+    {
+      "id": "athens-way-hotel-psyrri",
+      "slug": "athens-way-hotel-athens",
+      "neighborhood": "psyrri",
+      "neighborhoodName": "Psyrri",
+      "distanceToAcropolis": "10-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Athens Way Hotel",
+      "starRating": 3,
+      "pricePerNight": 80,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Budget",
+        "Nightlife",
+        "Young travelers"
+      ],
+      "overview": "Simple budget hotel in vibrant Psyrri. Clean rooms and great location for exploring.",
+      "pros": [
+        "Budget-friendly",
+        "Great location",
+        "Clean"
+      ],
+      "cons": [
+        "Basic rooms",
+        "Noisy area"
+      ]
+    },
+    {
+      "id": "herodion-hotel-koukaki",
+      "slug": "herodion-hotel-athens",
+      "neighborhood": "koukaki",
+      "neighborhoodName": "Koukaki",
+      "distanceToAcropolis": "5-8 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Herodion Hotel",
+      "starRating": 4,
+      "pricePerNight": 155,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 4,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "Garden",
+        "WiFi"
+      ],
+      "bestFor": [
+        "Families",
+        "Quiet",
+        "Acropolis access"
+      ],
+      "overview": "Elegant hotel at the south slope of the Acropolis. Beautiful garden and easy access to sites.",
+      "pros": [
+        "Quiet location",
+        "Garden setting",
+        "Near Acropolis"
+      ],
+      "cons": [
+        "Uphill walk to center"
+      ]
+    },
+    {
+      "id": "acropolis-hill-hotel-koukaki",
+      "slug": "acropolis-hill-hotel-athens",
+      "neighborhood": "koukaki",
+      "neighborhoodName": "Koukaki",
+      "distanceToAcropolis": "5-8 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Acropolis Hill Hotel",
+      "starRating": 3,
+      "pricePerNight": 85,
+      "hasAcropolisView": true,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC",
+        "Terrace"
+      ],
+      "bestFor": [
+        "Budget",
+        "Views",
+        "Local area"
+      ],
+      "overview": "Great value hotel with Acropolis views in authentic Koukaki neighborhood.",
+      "pros": [
+        "Acropolis views",
+        "Local neighborhood",
+        "Great value"
+      ],
+      "cons": [
+        "Basic amenities",
+        "Uphill location"
+      ]
+    },
+    {
+      "id": "marble-house-koukaki",
+      "slug": "marble-house-athens",
+      "neighborhood": "koukaki",
+      "neighborhoodName": "Koukaki",
+      "distanceToAcropolis": "5-8 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Marble House",
+      "starRating": 2,
+      "pricePerNight": 55,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Kitchen",
+        "WiFi",
+        "Garden"
+      ],
+      "bestFor": [
+        "Budget",
+        "Long stays",
+        "Self-catering"
+      ],
+      "overview": "Family-run pension with garden courtyard. Simple rooms but incredible value and warm hospitality.",
+      "pros": [
+        "Super affordable",
+        "Lovely garden",
+        "Friendly owners"
+      ],
+      "cons": [
+        "Very basic",
+        "Shared facilities"
+      ]
+    },
+    {
+      "id": "philippos-hotel-koukaki",
+      "slug": "philippos-hotel-athens",
+      "neighborhood": "koukaki",
+      "neighborhoodName": "Koukaki",
+      "distanceToAcropolis": "5-8 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Philippos Hotel",
+      "starRating": 3,
+      "pricePerNight": 95,
+      "hasAcropolisView": true,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Mid-range",
+        "Quiet",
+        "Couples"
+      ],
+      "overview": "Comfortable hotel in quiet Koukaki with partial Acropolis views. Good base for sightseeing.",
+      "pros": [
+        "Quiet area",
+        "Good breakfast",
+        "Near metro"
+      ],
+      "cons": [
+        "Dated decor",
+        "No rooftop"
+      ]
+    },
+    {
+      "id": "exarchion-hotel-exarchia",
+      "slug": "exarchion-hotel-athens",
+      "neighborhood": "exarchia",
+      "neighborhoodName": "Exarchia",
+      "distanceToAcropolis": "20 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Exarchion Hotel",
+      "starRating": 3,
+      "pricePerNight": 65,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Budget",
+        "Alternative culture",
+        "Students"
+      ],
+      "overview": "Classic hotel in bohemian Exarchia. Simple but clean with authentic neighborhood experience.",
+      "pros": [
+        "Very affordable",
+        "Authentic area",
+        "Near museums"
+      ],
+      "cons": [
+        "Gritty neighborhood",
+        "Basic rooms"
+      ]
+    },
+    {
+      "id": "orion-hotel-exarchia",
+      "slug": "orion-hotel-athens",
+      "neighborhood": "exarchia",
+      "neighborhoodName": "Exarchia",
+      "distanceToAcropolis": "20 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Orion Hotel",
+      "starRating": 2,
+      "pricePerNight": 50,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Budget",
+        "Backpackers",
+        "Long stays"
+      ],
+      "overview": "No-frills budget hotel in Exarchia. Perfect for travelers who want to save money.",
+      "pros": [
+        "Rock-bottom prices",
+        "Central location",
+        "Clean"
+      ],
+      "cons": [
+        "Very basic",
+        "Alternative area"
+      ]
+    },
+    {
+      "id": "city-circus-athens-exarchia",
+      "slug": "city-circus-athens-athens",
+      "neighborhood": "exarchia",
+      "neighborhoodName": "Exarchia",
+      "distanceToAcropolis": "20 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "City Circus Athens",
+      "starRating": 3,
+      "pricePerNight": 40,
+      "hasAcropolisView": false,
+      "hasRooftopBar": true,
+      "rooftopRating": 3,
+      "amenities": [
+        "Rooftop",
+        "Bar",
+        "Kitchen",
+        "Events"
+      ],
+      "bestFor": [
+        "Backpackers",
+        "Social",
+        "Budget"
+      ],
+      "overview": "Award-winning hostel with great rooftop and social events. Mix of dorms and private rooms.",
+      "pros": [
+        "Great atmosphere",
+        "Rooftop bar",
+        "Social events"
+      ],
+      "cons": [
+        "Hostel vibe",
+        "Can be loud"
+      ]
+    },
+    {
+      "id": "piraeus-theoxenia-hotel-piraeus",
+      "slug": "piraeus-theoxenia-hotel-athens",
+      "neighborhood": "piraeus",
+      "neighborhoodName": "Piraeus",
+      "distanceToAcropolis": "30 min (metro)",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Piraeus Theoxenia Hotel",
+      "starRating": 4,
+      "pricePerNight": 120,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "WiFi",
+        "Parking"
+      ],
+      "bestFor": [
+        "Ferry travelers",
+        "Business",
+        "Marina views"
+      ],
+      "overview": "Modern hotel near Piraeus port. Perfect for early ferry departures to the islands.",
+      "pros": [
+        "Near ferries",
+        "Marina views",
+        "Good restaurant"
+      ],
+      "cons": [
+        "Far from Athens center",
+        "Industrial area"
+      ]
+    },
+    {
+      "id": "phidias-hotel-piraeus",
+      "slug": "phidias-hotel-athens",
+      "neighborhood": "piraeus",
+      "neighborhoodName": "Piraeus",
+      "distanceToAcropolis": "30 min (metro)",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Phidias Hotel",
+      "starRating": 3,
+      "pricePerNight": 75,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Ferry travelers",
+        "Budget",
+        "Practical"
+      ],
+      "overview": "Simple hotel walking distance from Piraeus port. Ideal for catching early ferries.",
+      "pros": [
+        "Very close to port",
+        "Affordable",
+        "Clean"
+      ],
+      "cons": [
+        "Basic rooms",
+        "Not scenic"
+      ]
+    },
+    {
+      "id": "kastella-hotel-piraeus",
+      "slug": "kastella-hotel-athens",
+      "neighborhood": "piraeus",
+      "neighborhoodName": "Piraeus",
+      "distanceToAcropolis": "30 min (metro)",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Kastella Hotel",
+      "starRating": 3,
+      "pricePerNight": 85,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "Sea View"
+      ],
+      "bestFor": [
+        "Seafood lovers",
+        "Local experience",
+        "Quiet"
+      ],
+      "overview": "Charming hotel in Kastella neighborhood with sea views. Near excellent seafood tavernas.",
+      "pros": [
+        "Sea views",
+        "Great restaurants nearby",
+        "Authentic area"
+      ],
+      "cons": [
+        "Far from center",
+        "Limited transport"
+      ]
+    }
+  ]
+}

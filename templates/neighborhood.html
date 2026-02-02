@@ -1,0 +1,110 @@
+<!-- Neighborhood Hero -->
+<section class="neighborhood-hero">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="/">Home</a> → <a href="/athens-hotels/plaka">Neighborhoods</a> → <span>{{NAME}}</span>
+    </nav>
+    <div class="neighborhood-header">
+      <span class="neighborhood-emoji">{{EMOJI}}</span>
+      <h1>Hotels in {{NAME}}, Athens</h1>
+      <p class="neighborhood-tagline">{{TAGLINE}}</p>
+    </div>
+    <div class="neighborhood-stats">
+      <div class="stat">
+        <span class="stat-value">{{HOTEL_COUNT}}</span>
+        <span class="stat-label">Hotels</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">€{{AVG_PRICE}}</span>
+        <span class="stat-label">Avg/Night</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">{{WALK_TIME}}</span>
+        <span class="stat-label">to Acropolis</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Neighborhood Overview -->
+<section class="section">
+  <div class="container">
+    <div class="neighborhood-overview">
+      <div class="overview-content">
+        <h2>About {{NAME}}</h2>
+        <p>{{DESCRIPTION}}</p>
+        <div class="vibe-tags">
+          {{VIBE_TAGS}}
+        </div>
+        <div class="best-for">
+          <strong>Best for:</strong> {{BEST_FOR}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hotels Grid -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Hotels in {{NAME}}</h2>
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="budget">Budget</button>
+      <button class="filter-btn" data-filter="mid">Mid-Range</button>
+      <button class="filter-btn" data-filter="luxury">Luxury</button>
+      <button class="filter-btn" data-filter="view">Acropolis View</button>
+    </div>
+    <div class="hotels-grid">
+      {{HOTELS_GRID}}
+    </div>
+  </div>
+</section>
+
+<!-- Nearby Neighborhoods -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Nearby Neighborhoods</h2>
+    <div class="nearby-grid">
+      {{NEARBY_NEIGHBORHOODS}}
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">FAQs: Staying in {{NAME}}</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Is {{NAME}} a good area to stay in Athens?</summary>
+        <p>{{FAQ_GOOD_AREA}}</p>
+      </details>
+      <details class="faq-item">
+        <summary>How far is {{NAME}} from the Acropolis?</summary>
+        <p>{{NAME}} is {{WALK_TIME}} walk from the Acropolis. {{FAQ_DISTANCE}}</p>
+      </details>
+      <details class="faq-item">
+        <summary>What's the average hotel price in {{NAME}}?</summary>
+        <p>Hotels in {{NAME}} average around €{{AVG_PRICE}} per night. {{FAQ_PRICE}}</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.hotel-card').forEach(card => {
+      if (filter === 'all' || card.dataset.tier === filter || (filter === 'view' && card.dataset.view === 'true')) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+</script>

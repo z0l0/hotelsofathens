@@ -1,0 +1,198 @@
+{
+  "id": "monastiraki",
+  "name": "Monastiraki",
+  "emoji": "🛍️",
+  "tagline": "Vibrant Market District",
+  "description": "Bustling flea market, street food, and lively atmosphere. Home to the famous Monastiraki Square with views of the Acropolis and ancient Agora.",
+  "avgPrice": 120,
+  "walkToAcropolis": "8-12 min",
+  "vibe": [
+    "Vibrant",
+    "Markets",
+    "Nightlife"
+  ],
+  "bestFor": [
+    "Shoppers",
+    "Foodies",
+    "Budget travelers"
+  ],
+  "hotelCount": 5,
+  "hotels": [
+    {
+      "id": "a-for-athens-monastiraki",
+      "slug": "a-for-athens-athens",
+      "neighborhood": "monastiraki",
+      "neighborhoodName": "Monastiraki",
+      "distanceToAcropolis": "8-12 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "A for Athens",
+      "starRating": 4,
+      "pricePerNight": 150,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 5,
+      "amenities": [
+        "Rooftop Bar",
+        "Restaurant",
+        "WiFi"
+      ],
+      "bestFor": [
+        "Nightlife",
+        "Young travelers",
+        "Views"
+      ],
+      "overview": "Hip hotel right on Monastiraki Square with the best rooftop bar in Athens. Unbeatable Acropolis views.",
+      "pros": [
+        "Famous rooftop bar",
+        "Perfect location",
+        "Trendy vibe"
+      ],
+      "cons": [
+        "Can be noisy",
+        "Small rooms"
+      ]
+    },
+    {
+      "id": "360-degrees-hotel-monastiraki",
+      "slug": "360-degrees-hotel-athens",
+      "neighborhood": "monastiraki",
+      "neighborhoodName": "Monastiraki",
+      "distanceToAcropolis": "8-12 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "360 Degrees Hotel",
+      "starRating": 4,
+      "pricePerNight": 140,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 4,
+      "amenities": [
+        "Rooftop",
+        "Bar",
+        "WiFi",
+        "Breakfast"
+      ],
+      "bestFor": [
+        "Views",
+        "Couples",
+        "Photographers"
+      ],
+      "overview": "Modern hotel with panoramic rooftop offering 360-degree views of Athens landmarks.",
+      "pros": [
+        "Incredible views",
+        "Modern rooms",
+        "Great breakfast"
+      ],
+      "cons": [
+        "Street noise",
+        "Busy area"
+      ]
+    },
+    {
+      "id": "attalos-hotel-monastiraki",
+      "slug": "attalos-hotel-athens",
+      "neighborhood": "monastiraki",
+      "neighborhoodName": "Monastiraki",
+      "distanceToAcropolis": "8-12 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Attalos Hotel",
+      "starRating": 3,
+      "pricePerNight": 75,
+      "hasAcropolisView": true,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Rooftop Terrace",
+        "Breakfast",
+        "WiFi"
+      ],
+      "bestFor": [
+        "Budget",
+        "Backpackers",
+        "Location"
+      ],
+      "overview": "Classic budget hotel with rooftop terrace views. Simple but clean with unbeatable location.",
+      "pros": [
+        "Budget-friendly",
+        "Rooftop views",
+        "Helpful staff"
+      ],
+      "cons": [
+        "Basic rooms",
+        "Old building"
+      ]
+    },
+    {
+      "id": "ob-boutique-hotel-athens-monastiraki",
+      "slug": "ob-athens-boutique-hotel-athens",
+      "neighborhood": "monastiraki",
+      "neighborhoodName": "Monastiraki",
+      "distanceToAcropolis": "8-12 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "O&B Athens Boutique Hotel",
+      "starRating": 4,
+      "pricePerNight": 170,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 4,
+      "amenities": [
+        "Spa",
+        "Restaurant",
+        "Bar",
+        "Gym"
+      ],
+      "bestFor": [
+        "Boutique",
+        "Couples",
+        "Wellness"
+      ],
+      "overview": "Elegant boutique hotel combining neoclassical architecture with modern luxury.",
+      "pros": [
+        "Beautiful building",
+        "Excellent spa",
+        "Quiet rooms"
+      ],
+      "cons": [
+        "Pricey restaurant"
+      ]
+    },
+    {
+      "id": "athens-backpackers-monastiraki",
+      "slug": "athens-backpackers-athens",
+      "neighborhood": "monastiraki",
+      "neighborhoodName": "Monastiraki",
+      "distanceToAcropolis": "8-12 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Athens Backpackers",
+      "starRating": 2,
+      "pricePerNight": 35,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 3,
+      "amenities": [
+        "Rooftop Bar",
+        "Kitchen",
+        "WiFi"
+      ],
+      "bestFor": [
+        "Backpackers",
+        "Budget",
+        "Social"
+      ],
+      "overview": "Legendary backpacker hostel with famous rooftop bar. Social atmosphere and great location.",
+      "pros": [
+        "Super cheap",
+        "Great rooftop",
+        "Social vibe"
+      ],
+      "cons": [
+        "Hostel dorms",
+        "Can be loud"
+      ]
+    }
+  ]
+}

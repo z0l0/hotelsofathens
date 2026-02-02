@@ -1,0 +1,163 @@
+{
+  "id": "koukaki",
+  "name": "Koukaki",
+  "emoji": "🏠",
+  "tagline": "Local & Authentic",
+  "description": "Quiet residential neighborhood just south of the Acropolis. Local tavernas, neighborhood feel, and excellent value. The locals' favorite.",
+  "avgPrice": 95,
+  "walkToAcropolis": "5-8 min",
+  "vibe": [
+    "Local",
+    "Quiet",
+    "Authentic"
+  ],
+  "bestFor": [
+    "Budget travelers",
+    "Long stays",
+    "Local experience"
+  ],
+  "hotelCount": 4,
+  "hotels": [
+    {
+      "id": "herodion-hotel-koukaki",
+      "slug": "herodion-hotel-athens",
+      "neighborhood": "koukaki",
+      "neighborhoodName": "Koukaki",
+      "distanceToAcropolis": "5-8 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Herodion Hotel",
+      "starRating": 4,
+      "pricePerNight": 155,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 4,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "Garden",
+        "WiFi"
+      ],
+      "bestFor": [
+        "Families",
+        "Quiet",
+        "Acropolis access"
+      ],
+      "overview": "Elegant hotel at the south slope of the Acropolis. Beautiful garden and easy access to sites.",
+      "pros": [
+        "Quiet location",
+        "Garden setting",
+        "Near Acropolis"
+      ],
+      "cons": [
+        "Uphill walk to center"
+      ]
+    },
+    {
+      "id": "acropolis-hill-hotel-koukaki",
+      "slug": "acropolis-hill-hotel-athens",
+      "neighborhood": "koukaki",
+      "neighborhoodName": "Koukaki",
+      "distanceToAcropolis": "5-8 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Acropolis Hill Hotel",
+      "starRating": 3,
+      "pricePerNight": 85,
+      "hasAcropolisView": true,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC",
+        "Terrace"
+      ],
+      "bestFor": [
+        "Budget",
+        "Views",
+        "Local area"
+      ],
+      "overview": "Great value hotel with Acropolis views in authentic Koukaki neighborhood.",
+      "pros": [
+        "Acropolis views",
+        "Local neighborhood",
+        "Great value"
+      ],
+      "cons": [
+        "Basic amenities",
+        "Uphill location"
+      ]
+    },
+    {
+      "id": "marble-house-koukaki",
+      "slug": "marble-house-athens",
+      "neighborhood": "koukaki",
+      "neighborhoodName": "Koukaki",
+      "distanceToAcropolis": "5-8 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Marble House",
+      "starRating": 2,
+      "pricePerNight": 55,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Kitchen",
+        "WiFi",
+        "Garden"
+      ],
+      "bestFor": [
+        "Budget",
+        "Long stays",
+        "Self-catering"
+      ],
+      "overview": "Family-run pension with garden courtyard. Simple rooms but incredible value and warm hospitality.",
+      "pros": [
+        "Super affordable",
+        "Lovely garden",
+        "Friendly owners"
+      ],
+      "cons": [
+        "Very basic",
+        "Shared facilities"
+      ]
+    },
+    {
+      "id": "philippos-hotel-koukaki",
+      "slug": "philippos-hotel-athens",
+      "neighborhood": "koukaki",
+      "neighborhoodName": "Koukaki",
+      "distanceToAcropolis": "5-8 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Philippos Hotel",
+      "starRating": 3,
+      "pricePerNight": 95,
+      "hasAcropolisView": true,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Mid-range",
+        "Quiet",
+        "Couples"
+      ],
+      "overview": "Comfortable hotel in quiet Koukaki with partial Acropolis views. Good base for sightseeing.",
+      "pros": [
+        "Quiet area",
+        "Good breakfast",
+        "Near metro"
+      ],
+      "cons": [
+        "Dated decor",
+        "No rooftop"
+      ]
+    }
+  ]
+}

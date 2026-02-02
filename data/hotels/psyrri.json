@@ -1,0 +1,165 @@
+{
+  "id": "psyrri",
+  "name": "Psyrri",
+  "emoji": "🎨",
+  "tagline": "Artsy & Alternative",
+  "description": "Former industrial area transformed into Athens' creative hub. Street art, indie bars, live music venues, and eclectic restaurants.",
+  "avgPrice": 100,
+  "walkToAcropolis": "10-15 min",
+  "vibe": [
+    "Artsy",
+    "Nightlife",
+    "Alternative"
+  ],
+  "bestFor": [
+    "Young travelers",
+    "Nightlife lovers",
+    "Creatives"
+  ],
+  "hotelCount": 4,
+  "hotels": [
+    {
+      "id": "pallas-athena-grecotel-psyrri",
+      "slug": "pallas-athena-grecotel-athens",
+      "neighborhood": "psyrri",
+      "neighborhoodName": "Psyrri",
+      "distanceToAcropolis": "10-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Pallas Athena Grecotel",
+      "starRating": 5,
+      "pricePerNight": 200,
+      "hasAcropolisView": false,
+      "hasRooftopBar": true,
+      "rooftopRating": 4,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "Spa",
+        "Art Gallery"
+      ],
+      "bestFor": [
+        "Art lovers",
+        "Design",
+        "Nightlife"
+      ],
+      "overview": "Art-focused luxury hotel with rotating exhibitions and vibrant design. In the heart of creative Psyrri.",
+      "pros": [
+        "Unique art concept",
+        "Great location",
+        "Excellent restaurant"
+      ],
+      "cons": [
+        "No Acropolis view",
+        "Can be noisy"
+      ]
+    },
+    {
+      "id": "athens-tiare-hotel-psyrri",
+      "slug": "athens-tiare-hotel-athens",
+      "neighborhood": "psyrri",
+      "neighborhoodName": "Psyrri",
+      "distanceToAcropolis": "10-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Athens Tiare Hotel",
+      "starRating": 4,
+      "pricePerNight": 130,
+      "hasAcropolisView": false,
+      "hasRooftopBar": true,
+      "rooftopRating": 3,
+      "amenities": [
+        "Rooftop",
+        "Bar",
+        "WiFi",
+        "Breakfast"
+      ],
+      "bestFor": [
+        "Nightlife",
+        "Young travelers",
+        "Value"
+      ],
+      "overview": "Modern hotel in the heart of Athens' nightlife district. Great rooftop for evening drinks.",
+      "pros": [
+        "Nightlife location",
+        "Modern rooms",
+        "Good value"
+      ],
+      "cons": [
+        "Street noise",
+        "Basic breakfast"
+      ]
+    },
+    {
+      "id": "innathens-psyrri",
+      "slug": "innathens-athens",
+      "neighborhood": "psyrri",
+      "neighborhoodName": "Psyrri",
+      "distanceToAcropolis": "10-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "InnAthens",
+      "starRating": 4,
+      "pricePerNight": 110,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "WiFi",
+        "Breakfast"
+      ],
+      "bestFor": [
+        "Foodies",
+        "Local experience",
+        "Value"
+      ],
+      "overview": "Boutique hotel with excellent restaurant serving modern Greek cuisine. Perfect for food lovers.",
+      "pros": [
+        "Great restaurant",
+        "Authentic area",
+        "Good value"
+      ],
+      "cons": [
+        "No rooftop",
+        "Gritty neighborhood"
+      ]
+    },
+    {
+      "id": "athens-way-hotel-psyrri",
+      "slug": "athens-way-hotel-athens",
+      "neighborhood": "psyrri",
+      "neighborhoodName": "Psyrri",
+      "distanceToAcropolis": "10-15 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Athens Way Hotel",
+      "starRating": 3,
+      "pricePerNight": 80,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Budget",
+        "Nightlife",
+        "Young travelers"
+      ],
+      "overview": "Simple budget hotel in vibrant Psyrri. Clean rooms and great location for exploring.",
+      "pros": [
+        "Budget-friendly",
+        "Great location",
+        "Clean"
+      ],
+      "cons": [
+        "Basic rooms",
+        "Noisy area"
+      ]
+    }
+  ]
+}

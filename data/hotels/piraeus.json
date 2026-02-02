@@ -1,0 +1,128 @@
+{
+  "id": "piraeus",
+  "name": "Piraeus",
+  "emoji": "⚓",
+  "tagline": "Port & Ferries",
+  "description": "Athens' historic port city. Perfect for early ferry departures to the islands. Seafood restaurants along the marina and authentic Greek atmosphere.",
+  "avgPrice": 85,
+  "walkToAcropolis": "30 min (metro)",
+  "vibe": [
+    "Maritime",
+    "Authentic",
+    "Practical"
+  ],
+  "bestFor": [
+    "Island hoppers",
+    "Seafood lovers",
+    "Budget travelers"
+  ],
+  "hotelCount": 3,
+  "hotels": [
+    {
+      "id": "piraeus-theoxenia-hotel-piraeus",
+      "slug": "piraeus-theoxenia-hotel-athens",
+      "neighborhood": "piraeus",
+      "neighborhoodName": "Piraeus",
+      "distanceToAcropolis": "30 min (metro)",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Piraeus Theoxenia Hotel",
+      "starRating": 4,
+      "pricePerNight": 120,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "WiFi",
+        "Parking"
+      ],
+      "bestFor": [
+        "Ferry travelers",
+        "Business",
+        "Marina views"
+      ],
+      "overview": "Modern hotel near Piraeus port. Perfect for early ferry departures to the islands.",
+      "pros": [
+        "Near ferries",
+        "Marina views",
+        "Good restaurant"
+      ],
+      "cons": [
+        "Far from Athens center",
+        "Industrial area"
+      ]
+    },
+    {
+      "id": "phidias-hotel-piraeus",
+      "slug": "phidias-hotel-athens",
+      "neighborhood": "piraeus",
+      "neighborhoodName": "Piraeus",
+      "distanceToAcropolis": "30 min (metro)",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Phidias Hotel",
+      "starRating": 3,
+      "pricePerNight": 75,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Ferry travelers",
+        "Budget",
+        "Practical"
+      ],
+      "overview": "Simple hotel walking distance from Piraeus port. Ideal for catching early ferries.",
+      "pros": [
+        "Very close to port",
+        "Affordable",
+        "Clean"
+      ],
+      "cons": [
+        "Basic rooms",
+        "Not scenic"
+      ]
+    },
+    {
+      "id": "kastella-hotel-piraeus",
+      "slug": "kastella-hotel-athens",
+      "neighborhood": "piraeus",
+      "neighborhoodName": "Piraeus",
+      "distanceToAcropolis": "30 min (metro)",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Kastella Hotel",
+      "starRating": 3,
+      "pricePerNight": 85,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "Sea View"
+      ],
+      "bestFor": [
+        "Seafood lovers",
+        "Local experience",
+        "Quiet"
+      ],
+      "overview": "Charming hotel in Kastella neighborhood with sea views. Near excellent seafood tavernas.",
+      "pros": [
+        "Sea views",
+        "Great restaurants nearby",
+        "Authentic area"
+      ],
+      "cons": [
+        "Far from center",
+        "Limited transport"
+      ]
+    }
+  ]
+}

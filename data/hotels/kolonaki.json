@@ -1,0 +1,165 @@
+{
+  "id": "kolonaki",
+  "name": "Kolonaki",
+  "emoji": "💎",
+  "tagline": "Upscale & Chic",
+  "description": "Athens' most fashionable neighborhood with designer boutiques, art galleries, and sophisticated cafes. At the foot of Lycabettus Hill.",
+  "avgPrice": 200,
+  "walkToAcropolis": "15-20 min",
+  "vibe": [
+    "Upscale",
+    "Fashionable",
+    "Quiet"
+  ],
+  "bestFor": [
+    "Luxury travelers",
+    "Shoppers",
+    "Art lovers"
+  ],
+  "hotelCount": 4,
+  "hotels": [
+    {
+      "id": "st-george-lycabettus-kolonaki",
+      "slug": "st-george-lycabettus-athens",
+      "neighborhood": "kolonaki",
+      "neighborhoodName": "Kolonaki",
+      "distanceToAcropolis": "15-20 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "St. George Lycabettus",
+      "starRating": 5,
+      "pricePerNight": 250,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 5,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Restaurant",
+        "Gym"
+      ],
+      "bestFor": [
+        "Luxury",
+        "Views",
+        "Quiet"
+      ],
+      "overview": "Hillside luxury hotel with stunning city views. Rooftop pool and Le Grand Balcon restaurant.",
+      "pros": [
+        "Amazing views",
+        "Rooftop pool",
+        "Quiet area"
+      ],
+      "cons": [
+        "Uphill walk",
+        "Away from sites"
+      ]
+    },
+    {
+      "id": "periscope-hotel-kolonaki",
+      "slug": "periscope-hotel-athens",
+      "neighborhood": "kolonaki",
+      "neighborhoodName": "Kolonaki",
+      "distanceToAcropolis": "15-20 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Periscope Hotel",
+      "starRating": 4,
+      "pricePerNight": 160,
+      "hasAcropolisView": false,
+      "hasRooftopBar": true,
+      "rooftopRating": 3,
+      "amenities": [
+        "Rooftop",
+        "Bar",
+        "WiFi",
+        "Breakfast"
+      ],
+      "bestFor": [
+        "Design",
+        "Boutique",
+        "Hip"
+      ],
+      "overview": "Design-forward boutique hotel in fashionable Kolonaki. Modern aesthetic with rooftop terrace.",
+      "pros": [
+        "Great design",
+        "Trendy area",
+        "Good breakfast"
+      ],
+      "cons": [
+        "Small rooms",
+        "No major views"
+      ]
+    },
+    {
+      "id": "coco-mat-bc-athens-kolonaki",
+      "slug": "coco-mat-athens-bc-athens",
+      "neighborhood": "kolonaki",
+      "neighborhoodName": "Kolonaki",
+      "distanceToAcropolis": "15-20 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Coco-Mat Athens BC",
+      "starRating": 4,
+      "pricePerNight": 180,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Spa",
+        "Restaurant",
+        "Gym",
+        "Organic Bedding"
+      ],
+      "bestFor": [
+        "Wellness",
+        "Eco-conscious",
+        "Sleep quality"
+      ],
+      "overview": "Wellness-focused hotel featuring Coco-Mat's famous organic mattresses and sustainable design.",
+      "pros": [
+        "Best beds in Athens",
+        "Eco-friendly",
+        "Great spa"
+      ],
+      "cons": [
+        "No rooftop",
+        "Quiet area"
+      ]
+    },
+    {
+      "id": "kolonaki-townhouse-kolonaki",
+      "slug": "kolonaki-townhouse-athens",
+      "neighborhood": "kolonaki",
+      "neighborhoodName": "Kolonaki",
+      "distanceToAcropolis": "15-20 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Kolonaki Townhouse",
+      "starRating": 3,
+      "pricePerNight": 120,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "Garden"
+      ],
+      "bestFor": [
+        "Boutique",
+        "Quiet",
+        "Local feel"
+      ],
+      "overview": "Charming small hotel in residential Kolonaki. Feels like staying at a friend's elegant home.",
+      "pros": [
+        "Charming atmosphere",
+        "Quiet street",
+        "Personal service"
+      ],
+      "cons": [
+        "Limited amenities",
+        "No views"
+      ]
+    }
+  ]
+}

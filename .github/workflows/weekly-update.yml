@@ -1,0 +1,42 @@
+name: Weekly Hotel Update
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'  # Every Monday at 6 AM UTC
+  workflow_dispatch:      # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Fetch hotels
+        run: node scripts/fetch-hotels.js
+        env:
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+      
+      - name: Generate site
+        run: node scripts/generate.js
+        env:
+          FORMSPREE_ID: ${{ secrets.FORMSPREE_ID }}
+      
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Weekly update: ${{ github.event.repository.updated_at }}"
+          file_pattern: "dist/**/* data/**/*"

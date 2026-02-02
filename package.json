@@ -1,0 +1,16 @@
+{
+  "name": "hotelsofathens",
+  "version": "1.0.0",
+  "description": "Athens hotel comparison guide",
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-hotels.js",
+    "generate": "node scripts/generate.js",
+    "build": "npm run fetch && npm run generate",
+    "dev": "npm run generate && npx serve dist"
+  },
+  "dependencies": {
+    "https-proxy-agent": "^7.0.2"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Hotels of Athens</title>
+  <meta name="description" content="Questions about Athens hotels? Contact the Hotels of Athens team for personalized recommendations.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Us | Hotels of Athens">
+  <meta property="og:description" content="Questions about Athens hotels? Contact the Hotels of Athens team for personalized recommendations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hotelsofathens.com/contact">
+  <meta property="og:image" content="https://hotelsofathens.com/images/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Us | Hotels of Athens">
+  <meta name="twitter:description" content="Questions about Athens hotels? Contact the Hotels of Athens team for personalized recommendations.">
+  <meta name="twitter:image" content="https://hotelsofathens.com/images/og.jpg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Hotels of Athens",
+    "url": "https://hotelsofathens.com",
+    "description": "Compare Athens hotels by neighborhood, price, and amenities"
+  }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏛️</span>
+        <span class="logo-text">Hotels of Athens</span>
+      </a>
+      <nav class="nav">
+        <a href="/athens-hotels/plaka">Neighborhoods</a>
+        <a href="/budget-hotels-athens">Budget</a>
+        <a href="/luxury-hotels-athens">Luxury</a>
+        <a href="/contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Contact Hero -->
+<section class="contact-hero">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Questions about Athens hotels? We're here to help you find the perfect stay.</p>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+      <div class="contact-form-wrapper">
+        <form action="https://formspree.io/f/xnjzokwn" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Smith">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Hotel Recommendation">Hotel Recommendation</option>
+              <option value="Neighborhood Advice">Neighborhood Advice</option>
+              <option value="Partnership">Partnership</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+          </div>
+          
+          <input type="hidden" name="_subject" value="HotelsOfAthens Contact Form">
+          <input type="hidden" name="_next" value="https://hotelsofathens.com/thank-you">
+          <input type="text" name="_gotcha" style="display:none">
+          
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+      
+      <div class="contact-info">
+        <div class="info-card">
+          <h3>📧 Email Us</h3>
+          <p>contact@hotelsofathens.com</p>
+        </div>
+        <div class="info-card">
+          <h3>⏰ Response Time</h3>
+          <p>We typically respond within 24 hours.</p>
+        </div>
+        <div class="info-card">
+          <h3>🏛️ About Us</h3>
+          <p>We're passionate about helping travelers discover the best of Athens. Our team has personally visited and reviewed hotels across all neighborhoods.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-icon">🏛️</span>
+          <span class="logo-text">Hotels of Athens</span>
+          <p>Your guide to finding the perfect Athens hotel by neighborhood.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Neighborhoods</h4>
+          <a href="/athens-hotels/plaka">Plaka</a>
+          <a href="/athens-hotels/monastiraki">Monastiraki</a>
+          <a href="/athens-hotels/syntagma">Syntagma</a>
+          <a href="/athens-hotels/kolonaki">Kolonaki</a>
+        </div>
+        <div class="footer-links">
+          <h4>Guides</h4>
+          <a href="/budget-hotels-athens">Budget Hotels</a>
+          <a href="/luxury-hotels-athens">Luxury Hotels</a>
+          <a href="/best-rooftop-bars-athens">Rooftop Bars</a>
+        </div>
+        <div class="footer-links">
+          <h4>Info</h4>
+          <a href="/contact">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hotels of Athens. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav').classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>

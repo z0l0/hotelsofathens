@@ -1,0 +1,127 @@
+{
+  "id": "exarchia",
+  "name": "Exarchia",
+  "emoji": "✊",
+  "tagline": "Bohemian & Budget",
+  "description": "Athens' anarchist and student quarter. Cheap eats, vinyl shops, and alternative culture. Not for everyone, but full of character.",
+  "avgPrice": 70,
+  "walkToAcropolis": "20 min",
+  "vibe": [
+    "Alternative",
+    "Budget",
+    "Bohemian"
+  ],
+  "bestFor": [
+    "Budget travelers",
+    "Students",
+    "Alternative culture"
+  ],
+  "hotelCount": 3,
+  "hotels": [
+    {
+      "id": "exarchion-hotel-exarchia",
+      "slug": "exarchion-hotel-athens",
+      "neighborhood": "exarchia",
+      "neighborhoodName": "Exarchia",
+      "distanceToAcropolis": "20 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Exarchion Hotel",
+      "starRating": 3,
+      "pricePerNight": 65,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Budget",
+        "Alternative culture",
+        "Students"
+      ],
+      "overview": "Classic hotel in bohemian Exarchia. Simple but clean with authentic neighborhood experience.",
+      "pros": [
+        "Very affordable",
+        "Authentic area",
+        "Near museums"
+      ],
+      "cons": [
+        "Gritty neighborhood",
+        "Basic rooms"
+      ]
+    },
+    {
+      "id": "orion-hotel-exarchia",
+      "slug": "orion-hotel-athens",
+      "neighborhood": "exarchia",
+      "neighborhoodName": "Exarchia",
+      "distanceToAcropolis": "20 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Orion Hotel",
+      "starRating": 2,
+      "pricePerNight": 50,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Budget",
+        "Backpackers",
+        "Long stays"
+      ],
+      "overview": "No-frills budget hotel in Exarchia. Perfect for travelers who want to save money.",
+      "pros": [
+        "Rock-bottom prices",
+        "Central location",
+        "Clean"
+      ],
+      "cons": [
+        "Very basic",
+        "Alternative area"
+      ]
+    },
+    {
+      "id": "city-circus-athens-exarchia",
+      "slug": "city-circus-athens-athens",
+      "neighborhood": "exarchia",
+      "neighborhoodName": "Exarchia",
+      "distanceToAcropolis": "20 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "City Circus Athens",
+      "starRating": 3,
+      "pricePerNight": 40,
+      "hasAcropolisView": false,
+      "hasRooftopBar": true,
+      "rooftopRating": 3,
+      "amenities": [
+        "Rooftop",
+        "Bar",
+        "Kitchen",
+        "Events"
+      ],
+      "bestFor": [
+        "Backpackers",
+        "Social",
+        "Budget"
+      ],
+      "overview": "Award-winning hostel with great rooftop and social events. Mix of dorms and private rooms.",
+      "pros": [
+        "Great atmosphere",
+        "Rooftop bar",
+        "Social events"
+      ],
+      "cons": [
+        "Hostel vibe",
+        "Can be loud"
+      ]
+    }
+  ]
+}

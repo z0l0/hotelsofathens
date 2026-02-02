@@ -1,0 +1,120 @@
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <h1>Discover Athens Hotels</h1>
+    <p class="hero-subtitle">Compare {{TOTAL_HOTELS}}+ hotels across 8 neighborhoods. Find your perfect stay near the Acropolis.</p>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-value">{{TOTAL_HOTELS}}+</span>
+        <span class="stat-label">Hotels</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">8</span>
+        <span class="stat-label">Neighborhoods</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">€{{AVG_PRICE}}</span>
+        <span class="stat-label">Avg/Night</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Price Tiers -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Hotels by Budget</h2>
+    <div class="price-tiers">
+      <a href="/budget-hotels-athens" class="tier-card tier-budget">
+        <span class="tier-icon">💰</span>
+        <h3>Budget</h3>
+        <p>Under €80/night</p>
+        <span class="tier-count">{{BUDGET_COUNT}} hotels</span>
+      </a>
+      <a href="/athens-hotels/koukaki" class="tier-card tier-mid">
+        <span class="tier-icon">⭐</span>
+        <h3>Mid-Range</h3>
+        <p>€80-150/night</p>
+        <span class="tier-count">{{MID_COUNT}} hotels</span>
+      </a>
+      <a href="/athens-hotels/syntagma" class="tier-card tier-upscale">
+        <span class="tier-icon">✨</span>
+        <h3>Upscale</h3>
+        <p>€150-250/night</p>
+        <span class="tier-count">{{UPSCALE_COUNT}} hotels</span>
+      </a>
+      <a href="/luxury-hotels-athens" class="tier-card tier-luxury">
+        <span class="tier-icon">👑</span>
+        <h3>Luxury</h3>
+        <p>€250+/night</p>
+        <span class="tier-count">{{LUXURY_COUNT}} hotels</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Neighborhoods Grid -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Explore by Neighborhood</h2>
+    <p class="section-subtitle">Each Athens neighborhood has its own character. Find the one that fits your style.</p>
+    <div class="neighborhoods-grid">
+      {{NEIGHBORHOODS_GRID}}
+    </div>
+  </div>
+</section>
+
+<!-- Featured: Acropolis Views -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">🏛️ Hotels with Acropolis Views</h2>
+    <p class="section-subtitle">Wake up to ancient history. These hotels offer stunning views of the Parthenon.</p>
+    <div class="hotels-grid">
+      {{ACROPOLIS_VIEW_HOTELS}}
+    </div>
+  </div>
+</section>
+
+<!-- Featured: Rooftop Bars -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">🍸 Best Rooftop Bar Hotels</h2>
+    <p class="section-subtitle">Sunset cocktails with a view. The best hotel rooftops in Athens.</p>
+    <div class="hotels-grid">
+      {{ROOFTOP_HOTELS}}
+    </div>
+    <div class="section-cta">
+      <a href="/best-rooftop-bars-athens" class="btn btn-secondary">View All Rooftop Hotels →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Why Athens -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Why Stay in Athens?</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <span class="feature-icon">🏛️</span>
+        <h3>Ancient History</h3>
+        <p>Walk to the Acropolis, Ancient Agora, and 2,500 years of history.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🍽️</span>
+        <h3>Amazing Food</h3>
+        <p>From traditional tavernas to Michelin-starred restaurants.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">⛴️</span>
+        <h3>Island Gateway</h3>
+        <p>Easy ferry access to Santorini, Mykonos, and the Greek islands.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">☀️</span>
+        <h3>Year-Round Sun</h3>
+        <p>300+ days of sunshine. Perfect weather for exploring.</p>
+      </div>
+    </div>
+  </div>
+</section>

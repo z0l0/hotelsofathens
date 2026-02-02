@@ -1,0 +1,199 @@
+{
+  "id": "plaka",
+  "name": "Plaka",
+  "emoji": "🏛️",
+  "tagline": "Historic Heart of Athens",
+  "description": "Charming pedestrian streets beneath the Acropolis with neoclassical architecture, traditional tavernas, and ancient ruins around every corner. The oldest neighborhood in Athens.",
+  "avgPrice": 145,
+  "walkToAcropolis": "5-10 min",
+  "vibe": [
+    "Historic",
+    "Romantic",
+    "Touristy"
+  ],
+  "bestFor": [
+    "First-timers",
+    "Couples",
+    "History buffs"
+  ],
+  "hotelCount": 5,
+  "hotels": [
+    {
+      "id": "electra-palace-athens-plaka",
+      "slug": "electra-palace-athens-athens",
+      "neighborhood": "plaka",
+      "neighborhoodName": "Plaka",
+      "distanceToAcropolis": "5-10 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Electra Palace Athens",
+      "starRating": 5,
+      "pricePerNight": 280,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 5,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Restaurant",
+        "Gym"
+      ],
+      "bestFor": [
+        "Luxury",
+        "Couples",
+        "Views"
+      ],
+      "overview": "Iconic luxury hotel in the heart of Plaka with stunning rooftop pool and Acropolis views. Neoclassical elegance meets modern comfort.",
+      "pros": [
+        "Rooftop pool with Acropolis view",
+        "Prime Plaka location",
+        "Excellent service"
+      ],
+      "cons": [
+        "Premium pricing",
+        "Can be busy"
+      ]
+    },
+    {
+      "id": "plaka-hotel-plaka",
+      "slug": "plaka-hotel-athens",
+      "neighborhood": "plaka",
+      "neighborhoodName": "Plaka",
+      "distanceToAcropolis": "5-10 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Plaka Hotel",
+      "starRating": 3,
+      "pricePerNight": 95,
+      "hasAcropolisView": true,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Budget",
+        "Location",
+        "Solo travelers"
+      ],
+      "overview": "Charming budget-friendly hotel in the heart of Plaka. Simple rooms with great location and friendly staff.",
+      "pros": [
+        "Unbeatable location",
+        "Great value",
+        "Rooftop terrace"
+      ],
+      "cons": [
+        "Basic rooms",
+        "No pool"
+      ]
+    },
+    {
+      "id": "ava-hotel-athens-plaka",
+      "slug": "ava-hotel-athens-athens",
+      "neighborhood": "plaka",
+      "neighborhoodName": "Plaka",
+      "distanceToAcropolis": "5-10 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "AVA Hotel Athens",
+      "starRating": 4,
+      "pricePerNight": 180,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 4,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "WiFi",
+        "Concierge"
+      ],
+      "bestFor": [
+        "Boutique",
+        "Couples",
+        "Design lovers"
+      ],
+      "overview": "Stylish boutique hotel with contemporary design and Acropolis views. Perfect blend of comfort and aesthetics.",
+      "pros": [
+        "Beautiful design",
+        "Great rooftop",
+        "Quiet location"
+      ],
+      "cons": [
+        "Small rooms",
+        "Limited amenities"
+      ]
+    },
+    {
+      "id": "herodion-hotel-plaka",
+      "slug": "herodion-hotel-athens",
+      "neighborhood": "plaka",
+      "neighborhoodName": "Plaka",
+      "distanceToAcropolis": "5-10 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Herodion Hotel",
+      "starRating": 4,
+      "pricePerNight": 165,
+      "hasAcropolisView": true,
+      "hasRooftopBar": true,
+      "rooftopRating": 4,
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "Garden",
+        "WiFi"
+      ],
+      "bestFor": [
+        "Families",
+        "Couples",
+        "History buffs"
+      ],
+      "overview": "Elegant hotel at the foot of the Acropolis with beautiful garden and rooftop restaurant.",
+      "pros": [
+        "Steps from Acropolis",
+        "Lovely garden",
+        "Family-friendly"
+      ],
+      "cons": [
+        "Dated decor in some rooms"
+      ]
+    },
+    {
+      "id": "central-hotel-athens-plaka",
+      "slug": "central-athens-hotel-athens",
+      "neighborhood": "plaka",
+      "neighborhoodName": "Plaka",
+      "distanceToAcropolis": "5-10 min",
+      "lastVerified": "2026-02-02",
+      "isActive": true,
+      "name": "Central Athens Hotel",
+      "starRating": 3,
+      "pricePerNight": 85,
+      "hasAcropolisView": false,
+      "hasRooftopBar": false,
+      "rooftopRating": 0,
+      "amenities": [
+        "Breakfast",
+        "WiFi",
+        "AC"
+      ],
+      "bestFor": [
+        "Budget",
+        "Solo travelers",
+        "Short stays"
+      ],
+      "overview": "Clean and comfortable budget option in central Plaka. No frills but excellent value.",
+      "pros": [
+        "Great price",
+        "Central location",
+        "Clean rooms"
+      ],
+      "cons": [
+        "Basic amenities",
+        "No views"
+      ]
+    }
+  ]
+}

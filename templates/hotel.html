@@ -1,0 +1,111 @@
+<!-- Hotel Hero -->
+<section class="hotel-hero">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="/">Home</a> → <a href="/athens-hotels/{{NEIGHBORHOOD_ID}}">{{NEIGHBORHOOD_NAME}}</a> → <span>{{NAME}}</span>
+    </nav>
+    <div class="hotel-header">
+      <div class="hotel-title">
+        <h1>{{NAME}}</h1>
+        <div class="hotel-stars">{{STARS}}</div>
+      </div>
+      <div class="hotel-badges">
+        {{BADGES}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hotel Details -->
+<section class="section">
+  <div class="container">
+    <div class="hotel-layout">
+      <div class="hotel-main">
+        <!-- Price Card -->
+        <div class="price-card">
+          <div class="price-main">
+            <span class="price-from">from</span>
+            <span class="price-value">€{{PRICE}}</span>
+            <span class="price-per">/night</span>
+          </div>
+          <a href="{{BOOKING_URL}}" class="btn btn-primary" target="_blank" rel="noopener">Check Availability</a>
+        </div>
+
+        <!-- Overview -->
+        <div class="hotel-section">
+          <h2>Overview</h2>
+          <p>{{OVERVIEW}}</p>
+        </div>
+
+        <!-- Amenities -->
+        <div class="hotel-section">
+          <h2>Amenities</h2>
+          <div class="amenities-grid">
+            {{AMENITIES}}
+          </div>
+        </div>
+
+        <!-- Pros & Cons -->
+        <div class="hotel-section">
+          <div class="pros-cons">
+            <div class="pros">
+              <h3>✓ Pros</h3>
+              <ul>{{PROS}}</ul>
+            </div>
+            <div class="cons">
+              <h3>✗ Cons</h3>
+              <ul>{{CONS}}</ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="hotel-section">
+          <h2>Location</h2>
+          <p>Located in <a href="/athens-hotels/{{NEIGHBORHOOD_ID}}">{{NEIGHBORHOOD_NAME}}</a>, {{LOCATION_DESC}}</p>
+          <div class="location-stats">
+            <div class="location-stat">
+              <span class="stat-icon">🏛️</span>
+              <span>{{DISTANCE_ACROPOLIS}} to Acropolis</span>
+            </div>
+            <div class="location-stat">
+              <span class="stat-icon">🚇</span>
+              <span>{{DISTANCE_METRO}} to metro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="hotel-sidebar">
+        <div class="sidebar-card">
+          <h3>Quick Facts</h3>
+          <ul class="quick-facts">
+            <li><strong>Neighborhood:</strong> {{NEIGHBORHOOD_NAME}}</li>
+            <li><strong>Star Rating:</strong> {{STAR_RATING}} stars</li>
+            <li><strong>Price Range:</strong> €{{PRICE_MIN}}-{{PRICE_MAX}}</li>
+            <li><strong>Acropolis View:</strong> {{HAS_VIEW}}</li>
+            <li><strong>Rooftop Bar:</strong> {{HAS_ROOFTOP}}</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Best For</h3>
+          <div class="best-for-tags">
+            {{BEST_FOR_TAGS}}
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- Similar Hotels -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Similar Hotels in {{NEIGHBORHOOD_NAME}}</h2>
+    <div class="hotels-grid">
+      {{SIMILAR_HOTELS}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,92 @@
+{
+  "neighborhoods": [
+    {
+      "id": "plaka",
+      "name": "Plaka",
+      "emoji": "🏛️",
+      "tagline": "Historic Heart of Athens",
+      "description": "Charming pedestrian streets beneath the Acropolis with neoclassical architecture, traditional tavernas, and ancient ruins around every corner. The oldest neighborhood in Athens.",
+      "avgPrice": 145,
+      "walkToAcropolis": "5-10 min",
+      "vibe": ["Historic", "Romantic", "Touristy"],
+      "bestFor": ["First-timers", "Couples", "History buffs"]
+    },
+    {
+      "id": "monastiraki",
+      "name": "Monastiraki",
+      "emoji": "🛍️",
+      "tagline": "Vibrant Market District",
+      "description": "Bustling flea market, street food, and lively atmosphere. Home to the famous Monastiraki Square with views of the Acropolis and ancient Agora.",
+      "avgPrice": 120,
+      "walkToAcropolis": "8-12 min",
+      "vibe": ["Vibrant", "Markets", "Nightlife"],
+      "bestFor": ["Shoppers", "Foodies", "Budget travelers"]
+    },
+    {
+      "id": "syntagma",
+      "name": "Syntagma",
+      "emoji": "🏛️",
+      "tagline": "Central & Connected",
+      "description": "Athens' main square, home to the Parliament building and changing of the guard. Excellent metro connections and upscale shopping on Ermou Street.",
+      "avgPrice": 180,
+      "walkToAcropolis": "12-15 min",
+      "vibe": ["Central", "Business", "Upscale"],
+      "bestFor": ["Business travelers", "Luxury seekers", "First-timers"]
+    },
+    {
+      "id": "kolonaki",
+      "name": "Kolonaki",
+      "emoji": "💎",
+      "tagline": "Upscale & Chic",
+      "description": "Athens' most fashionable neighborhood with designer boutiques, art galleries, and sophisticated cafes. At the foot of Lycabettus Hill.",
+      "avgPrice": 200,
+      "walkToAcropolis": "15-20 min",
+      "vibe": ["Upscale", "Fashionable", "Quiet"],
+      "bestFor": ["Luxury travelers", "Shoppers", "Art lovers"]
+    },
+    {
+      "id": "psyrri",
+      "name": "Psyrri",
+      "emoji": "🎨",
+      "tagline": "Artsy & Alternative",
+      "description": "Former industrial area transformed into Athens' creative hub. Street art, indie bars, live music venues, and eclectic restaurants.",
+      "avgPrice": 100,
+      "walkToAcropolis": "10-15 min",
+      "vibe": ["Artsy", "Nightlife", "Alternative"],
+      "bestFor": ["Young travelers", "Nightlife lovers", "Creatives"]
+    },
+    {
+      "id": "koukaki",
+      "name": "Koukaki",
+      "emoji": "🏠",
+      "tagline": "Local & Authentic",
+      "description": "Quiet residential neighborhood just south of the Acropolis. Local tavernas, neighborhood feel, and excellent value. The locals' favorite.",
+      "avgPrice": 95,
+      "walkToAcropolis": "5-8 min",
+      "vibe": ["Local", "Quiet", "Authentic"],
+      "bestFor": ["Budget travelers", "Long stays", "Local experience"]
+    },
+    {
+      "id": "exarchia",
+      "name": "Exarchia",
+      "emoji": "✊",
+      "tagline": "Bohemian & Budget",
+      "description": "Athens' anarchist and student quarter. Cheap eats, vinyl shops, and alternative culture. Not for everyone, but full of character.",
+      "avgPrice": 70,
+      "walkToAcropolis": "20 min",
+      "vibe": ["Alternative", "Budget", "Bohemian"],
+      "bestFor": ["Budget travelers", "Students", "Alternative culture"]
+    },
+    {
+      "id": "piraeus",
+      "name": "Piraeus",
+      "emoji": "⚓",
+      "tagline": "Port & Ferries",
+      "description": "Athens' historic port city. Perfect for early ferry departures to the islands. Seafood restaurants along the marina and authentic Greek atmosphere.",
+      "avgPrice": 85,
+      "walkToAcropolis": "30 min (metro)",
+      "vibe": ["Maritime", "Authentic", "Practical"],
+      "bestFor": ["Island hoppers", "Seafood lovers", "Budget travelers"]
+    }
+  ]
+}

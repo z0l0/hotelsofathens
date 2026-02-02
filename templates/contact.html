@@ -1,0 +1,65 @@
+<!-- Contact Hero -->
+<section class="contact-hero">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Questions about Athens hotels? We're here to help you find the perfect stay.</p>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+      <div class="contact-form-wrapper">
+        <form action="https://formspree.io/f/{{FORMSPREE_ID}}" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Smith">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Hotel Recommendation">Hotel Recommendation</option>
+              <option value="Neighborhood Advice">Neighborhood Advice</option>
+              <option value="Partnership">Partnership</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+          </div>
+          
+          <input type="hidden" name="_subject" value="HotelsOfAthens Contact Form">
+          <input type="hidden" name="_next" value="https://hotelsofathens.com/thank-you">
+          <input type="text" name="_gotcha" style="display:none">
+          
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+      
+      <div class="contact-info">
+        <div class="info-card">
+          <h3>📧 Email Us</h3>
+          <p>contact@hotelsofathens.com</p>
+        </div>
+        <div class="info-card">
+          <h3>⏰ Response Time</h3>
+          <p>We typically respond within 24 hours.</p>
+        </div>
+        <div class="info-card">
+          <h3>🏛️ About Us</h3>
+          <p>We're passionate about helping travelers discover the best of Athens. Our team has personally visited and reviewed hotels across all neighborhoods.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
