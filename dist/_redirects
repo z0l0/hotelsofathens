@@ -1,2 +1,11 @@
 /index.html  /  301
 /area/*  /athens-hotels/:splat  301
+/hotels-with-acropolis-view-athens  /acropolis-view-hotels-athens  301
+/athens-hotels-with-view-of-acropolis  /acropolis-view-hotels-athens  301
+/best-hotels-near-acropolis  /hotels-near-acropolis-athens  301
+/piraeus-port-hotels  /hotels-near-piraeus-port  301
+/hotels-near-piraeus-ferry-terminal  /hotels-near-piraeus-port  301
+/hotels-near-syntagma-square-athens  /syntagma-square-hotels  301
+/best-area-to-stay-in-athens  /where-to-stay-in-athens  301
+/best-neighborhood-to-stay-in-athens  /where-to-stay-in-athens  301
+/hotels-in-athens-with-rooftop-pool  /athens-hotels-with-rooftop-pool  301

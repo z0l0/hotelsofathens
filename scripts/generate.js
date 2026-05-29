@@ -266,6 +266,367 @@ function renderFaqDetails(faqs) {
   `;
 }
 
+function renderGuideLinks(guides) {
+  const links = guides.map(guide => [
+    `      <a class="guide-link" href="/${guide.slug}">`,
+    `        <span>${escapeHtml(guide.kicker || 'Guide')}</span>`,
+    `        <strong>${escapeHtml(guide.label || guide.h1)}</strong>`,
+    '      </a>'
+  ].join('\n')).join('\n');
+
+  return [
+    '    <div class="guide-link-grid">',
+    links,
+    '    </div>'
+  ].join('\n');
+}
+
+function sortByScore(hotels) {
+  return [...hotels].sort((a, b) => {
+    const score = h => (h.starRating * 8) + (h.hasAcropolisView ? 9 : 0) + (h.hasRooftopBar ? 8 : 0) + ((h.rooftopRating || 0) * 2) - (h.pricePerNight / 80);
+    return score(b) - score(a);
+  });
+}
+
+const intentGuides = [
+  {
+    slug: 'hotels-near-acropolis-athens',
+    label: 'Hotels Near the Acropolis',
+    kicker: 'Acropolis',
+    title: 'Hotels Near Acropolis Athens',
+    h1: 'Hotels Near the Acropolis in Athens',
+    hero: 'Compare central Athens stays for short Acropolis access, historic sightseeing, and easy first-trip logistics.',
+    quickH2: 'For Acropolis-first trips, compare Plaka, Koukaki, Monastiraki, and Syntagma before choosing a hotel.',
+    quickP: 'These areas have the strongest combination of Acropolis access and hotel depth in the Hotels of Athens dataset. Plaka is the classic historic base, Koukaki is quieter and local, Monastiraki adds metro and nightlife, and Syntagma adds city-centre transport.',
+    description: 'Compare hotels near the Acropolis in Athens by area, price signal, view signal, rooftop bar, and traveler fit.',
+    caption: 'Central Athens hotels useful for Acropolis-focused trips.',
+    filter: h => ['plaka', 'koukaki', 'monastiraki', 'syntagma'].includes(h.neighborhood),
+    sort: hotels => sortByScore(hotels),
+    notes: [
+      ['Choose Plaka if', 'You want the most classic historic base and the shortest old-city feel around the Acropolis.'],
+      ['Choose Koukaki if', 'You want quieter streets, better value signals, and easy access to the south side of the Acropolis.'],
+      ['Choose Monastiraki if', 'You want Acropolis views plus metro, markets, rooftop bars, and nightlife.']
+    ],
+    faqs: [
+      ['What Athens area is closest to the Acropolis?', 'Plaka and Koukaki are the closest areas in this dataset, with Monastiraki also strong for central access.'],
+      ['Should I stay in Plaka or Koukaki near the Acropolis?', 'Choose Plaka for historic atmosphere and first-trip convenience; choose Koukaki for quieter value and a more residential feel.'],
+      ['Do hotels near the Acropolis always have Acropolis views?', 'No. Proximity and view are separate signals, so confirm the room or rooftop view before booking.']
+    ]
+  },
+  {
+    slug: 'acropolis-view-hotels-athens',
+    label: 'Acropolis View Hotels',
+    kicker: 'Views',
+    title: 'Acropolis View Hotels in Athens',
+    h1: 'Athens Hotels with Acropolis Views',
+    hero: 'Compare hotels with an Acropolis-view signal by neighborhood, price tier, rooftop bar, and traveler fit.',
+    quickH2: 'The strongest Acropolis-view hotel signals cluster in Plaka, Monastiraki, Syntagma, Koukaki, and Kolonaki.',
+    quickP: 'Use this page when the view matters more than a generic central location. Rooftop bars, room views, terraces, and restaurant views can differ, so confirm the exact view type before booking.',
+    description: 'Compare Athens hotels with Acropolis-view signals by neighborhood, price, rooftop bar, star category, and traveler fit.',
+    caption: 'Athens hotels with Acropolis-view signals in the Hotels of Athens dataset.',
+    filter: h => h.hasAcropolisView,
+    sort: hotels => sortByScore(hotels),
+    notes: [
+      ['Best luxury direction', 'Syntagma, Plaka, and Kolonaki carry several premium view signals.'],
+      ['Best value direction', 'Monastiraki and Koukaki include lower price signals with view flags.'],
+      ['View caveat', 'A hotel-level view signal does not guarantee every room has the same view.']
+    ],
+    faqs: [
+      ['Which Athens neighborhoods have Acropolis-view hotels?', 'Plaka, Monastiraki, Syntagma, Kolonaki, and Koukaki show Acropolis-view hotel signals in this dataset.'],
+      ['Are rooftop views and room views the same thing?', 'No. A rooftop may have a view even when standard rooms do not, so confirm the exact room or terrace before booking.'],
+      ['Are Acropolis-view hotels expensive?', 'Some are luxury-price stays, but the dataset also includes mid-range and budget price signals with Acropolis-view flags.']
+    ]
+  },
+  {
+    slug: '5-star-hotels-athens',
+    label: '5-Star Hotels',
+    kicker: 'Luxury',
+    title: '5-Star Hotels in Athens',
+    h1: '5-Star Hotels in Athens',
+    hero: 'Compare Athens 5-star stays by neighborhood, price signal, Acropolis view, rooftop bar, and traveler fit.',
+    quickH2: 'For 5-star stays, start with Syntagma, Plaka, Kolonaki, and Psyrri.',
+    quickP: 'Syntagma carries the strongest classic luxury signals, Plaka works for historic luxury near the Acropolis, Kolonaki adds a polished hillside option, and Psyrri adds a design-forward city stay.',
+    description: 'Compare 5-star hotels in Athens by area, price signal, Acropolis view, rooftop bar, amenities, and traveler fit.',
+    caption: 'Athens 5-star hotels compared by visible site data.',
+    filter: h => h.starRating >= 5,
+    sort: hotels => [...hotels].sort((a, b) => b.pricePerNight - a.pricePerNight),
+    notes: [
+      ['Classic luxury', 'Syntagma is the strongest starting point for landmark city-centre luxury.'],
+      ['Historic luxury', 'Plaka is the better fit when old-city atmosphere and Acropolis access matter.'],
+      ['Confirm before booking', 'Live rates, view categories, and included amenities can change by date and room type.']
+    ],
+    faqs: [
+      ['Which Athens area is best for 5-star hotels?', 'Syntagma has the strongest concentration of 5-star luxury signals in this dataset.'],
+      ['Do 5-star Athens hotels have rooftop bars?', 'Several tracked 5-star hotels show rooftop-bar signals, but not all do.'],
+      ['Are all 5-star hotels in Athens near the Acropolis?', 'No. Some are closer to Syntagma, Kolonaki, or Psyrri, so compare area fit as well as star category.']
+    ]
+  },
+  {
+    slug: 'boutique-hotels-athens',
+    label: 'Boutique Hotels',
+    kicker: 'Style',
+    title: 'Boutique Hotels in Athens',
+    h1: 'Boutique Hotels in Athens',
+    hero: 'Compare smaller, design-led, and character-forward Athens hotel options from the tracked dataset.',
+    quickH2: 'Boutique signals show up strongest in Plaka, Monastiraki, Kolonaki, and Psyrri.',
+    quickP: 'Choose Plaka for historic atmosphere, Monastiraki for central energy, Kolonaki for polished design, and Psyrri for art and nightlife context.',
+    description: 'Compare boutique hotels in Athens by neighborhood, price signal, view, rooftop bar, design fit, and nearby alternatives.',
+    caption: 'Athens boutique and design-forward hotel starting points.',
+    filter: h => (h.bestFor || []).some(x => /boutique|design|art/i.test(x)) || /boutique/i.test(h.name),
+    sort: hotels => sortByScore(hotels),
+    notes: [
+      ['Best for design', 'Kolonaki and Plaka are the cleanest starting points for a quieter boutique feel.'],
+      ['Best for nightlife', 'Monastiraki and Psyrri make more sense if restaurants, bars, and evenings out are central to the trip.'],
+      ['Data caveat', 'Boutique is treated as a visible style/fit signal, not an award or review ranking.']
+    ],
+    faqs: [
+      ['What counts as a boutique hotel in this guide?', 'Hotels are included when their stored tags, name, or positioning indicate boutique, design, or art-led fit.'],
+      ['Which Athens neighborhood is best for boutique hotels?', 'Plaka, Monastiraki, Kolonaki, and Psyrri are the best starting points in this dataset.'],
+      ['Are boutique hotels in Athens always luxury hotels?', 'No. Boutique can describe style and scale, while price signals range from mid-range to luxury.']
+    ]
+  },
+  {
+    slug: 'hotels-in-athens-with-pool',
+    label: 'Hotels with Pools',
+    kicker: 'Pool',
+    title: 'Hotels in Athens with Pool',
+    h1: 'Hotels in Athens with a Pool',
+    hero: 'Compare tracked Athens hotels where the amenities data includes a pool signal.',
+    quickH2: 'Pool signals are concentrated in higher-price Athens hotels.',
+    quickP: 'The Hotels of Athens dataset currently shows pool signals on a small set of premium hotels. Confirm whether the pool is rooftop, indoor, seasonal, or guest-only before booking.',
+    description: 'Compare Athens hotels with pool signals by area, price, view, rooftop bar, amenities, and traveler fit.',
+    caption: 'Athens hotels with pool signals in the dataset.',
+    filter: h => (h.amenities || []).some(a => /pool/i.test(a)),
+    sort: hotels => sortByScore(hotels),
+    notes: [
+      ['Pool type matters', 'A rooftop pool, spa pool, and seasonal outdoor pool are different booking decisions.'],
+      ['Price expectation', 'Pool signals in this dataset skew upscale and luxury.'],
+      ['Confirm access', 'Check whether pool access is included for your room type and dates.']
+    ],
+    faqs: [
+      ['Do many Athens hotels have pools?', 'In this dataset, pool signals are limited and mostly attached to premium hotels.'],
+      ['Are Athens hotel pools usually rooftop pools?', 'Some are rooftop or view-oriented, but pool type must be confirmed with the hotel before booking.'],
+      ['What area should I choose for a pool hotel in Athens?', 'Start with Plaka, Syntagma, and Kolonaki based on the current tracked pool signals.']
+    ]
+  },
+  {
+    slug: 'hotels-in-athens-city-centre',
+    label: 'City Centre Hotels',
+    kicker: 'Central',
+    title: 'Hotels in Athens City Centre',
+    h1: 'Hotels in Athens City Centre',
+    hero: 'Compare central Athens hotel areas for sightseeing, metro access, nightlife, shopping, and first-trip convenience.',
+    quickH2: 'Athens city-centre hotel searches should start with Plaka, Monastiraki, Syntagma, Koukaki, Psyrri, and Kolonaki.',
+    quickP: 'Those areas cover the strongest central use cases: old-city atmosphere, markets and metro, luxury transport connections, quieter Acropolis access, nightlife, and polished cafes/shopping.',
+    description: 'Compare hotels in Athens city centre by neighborhood, price signal, Acropolis access, rooftop bar, and traveler fit.',
+    caption: 'Central Athens hotels compared across the tracked city-centre neighborhoods.',
+    filter: h => ['plaka', 'monastiraki', 'syntagma', 'psyrri', 'koukaki', 'kolonaki'].includes(h.neighborhood),
+    sort: hotels => sortByScore(hotels).slice(0, 14),
+    notes: [
+      ['Most classic', 'Plaka is the most classic central sightseeing base.'],
+      ['Most connected', 'Syntagma and Monastiraki are the best starting points for metro and movement.'],
+      ['Quietest central feel', 'Koukaki and Kolonaki are better when you want a calmer base.']
+    ],
+    faqs: [
+      ['What counts as Athens city centre?', 'For this guide, city centre means Plaka, Monastiraki, Syntagma, Psyrri, Koukaki, and Kolonaki.'],
+      ['Is Piraeus in Athens city centre?', 'No. Piraeus is best treated as a port/ferry base rather than a central sightseeing base.'],
+      ['Which central Athens area is best for first-timers?', 'Plaka is the classic first-timer choice, while Monastiraki and Syntagma are better for transit.']
+    ]
+  },
+  {
+    slug: 'cheap-hotels-in-athens',
+    label: 'Cheap Hotels',
+    kicker: 'Value',
+    title: 'Cheap Hotels in Athens',
+    h1: 'Cheap Hotels in Athens',
+    hero: 'Compare lower price-signal Athens hotels by area, traveler fit, and tradeoffs.',
+    quickH2: 'The strongest cheap-hotel signals are in Exarchia, Monastiraki, Koukaki, Piraeus, and Syntagma.',
+    quickP: 'This page uses a wider value threshold than the budget guide: tracked hotels under €100/night. Confirm live taxes, room type, and cancellation terms before booking.',
+    description: 'Compare cheap hotels in Athens under €100/night by neighborhood, price signal, star category, view, and traveler fit.',
+    caption: 'Athens hotels under €100/night in the Hotels of Athens dataset.',
+    filter: h => h.pricePerNight < 100,
+    sort: hotels => [...hotels].sort((a, b) => a.pricePerNight - b.pricePerNight),
+    notes: [
+      ['Lowest visible signals', 'Athens Backpackers, City Circus Athens, Orion Hotel, Marble House, and Exarchion Hotel carry the lowest price signals.'],
+      ['Best central value', 'Monastiraki, Koukaki, and Syntagma offer more central value tradeoffs than port-first stays.'],
+      ['Confirm the true total', 'Taxes, breakfast, cancellation, and room type can change the final value.']
+    ],
+    faqs: [
+      ['What is a cheap hotel in Athens on this page?', 'This guide includes tracked hotels under €100/night based on stored price signals.'],
+      ['Which Athens area is cheapest in this dataset?', 'Exarchia has the strongest cluster of very low price signals.'],
+      ['Can cheap hotels in Athens still be central?', 'Yes. Monastiraki, Koukaki, and Syntagma have lower-price signals in central areas.']
+    ]
+  },
+  {
+    slug: 'hotels-near-piraeus-port',
+    label: 'Piraeus Port Hotels',
+    kicker: 'Ferries',
+    title: 'Hotels Near Piraeus Port',
+    h1: 'Hotels Near Piraeus Port',
+    hero: 'Compare Piraeus hotel options for early ferries, port logistics, seafood, and practical overnight stays.',
+    quickH2: 'Stay near Piraeus Port when ferry timing matters more than central Athens sightseeing.',
+    quickP: 'Piraeus is the practical base for early island departures and late ferry arrivals. If you also want Athens sightseeing, compare central neighborhoods before committing to a port stay.',
+    description: 'Compare hotels near Piraeus Port by price signal, ferry convenience, sea-view signal, and traveler fit.',
+    caption: 'Tracked Piraeus hotel options for port and ferry-focused trips.',
+    filter: h => h.neighborhood === 'piraeus',
+    sort: hotels => sortByScore(hotels),
+    notes: [
+      ['Best for early ferries', 'Choose Piraeus when avoiding an early transfer from central Athens is the priority.'],
+      ['Best for central sightseeing', 'Choose Syntagma or Monastiraki instead if the ferry is not the main constraint.'],
+      ['Confirm terminal logistics', 'Piraeus has multiple gates and transfer times, so check the exact ferry terminal.']
+    ],
+    faqs: [
+      ['Should I stay in Piraeus before an early ferry?', 'Yes, if reducing morning transfer risk matters more than staying in central Athens.'],
+      ['Is Piraeus good for sightseeing in Athens?', 'It is less convenient for classic Athens sightseeing than Plaka, Monastiraki, or Syntagma.'],
+      ['What should I confirm before booking a Piraeus hotel?', 'Confirm the exact ferry gate, transfer time, breakfast timing, and cancellation terms.']
+    ]
+  },
+  {
+    slug: 'syntagma-square-hotels',
+    label: 'Syntagma Square Hotels',
+    kicker: 'Syntagma',
+    title: 'Syntagma Square Hotels',
+    h1: 'Hotels Near Syntagma Square',
+    hero: 'Compare Syntagma hotels for transport, Parliament/Syntagma access, shopping, and premium city-centre stays.',
+    quickH2: 'Syntagma is the best Athens base for transport, classic luxury, and central city logistics.',
+    quickP: 'Choose Syntagma if you want airport/metro convenience, shopping access, and a polished city-centre base. Choose Plaka or Monastiraki if old-city atmosphere matters more.',
+    description: 'Compare Syntagma Square hotels by price signal, star category, Acropolis view, rooftop bar, and traveler fit.',
+    caption: 'Tracked Syntagma hotels compared by visible site data.',
+    filter: h => h.neighborhood === 'syntagma',
+    sort: hotels => sortByScore(hotels),
+    notes: [
+      ['Best for luxury', 'Hotel Grande Bretagne and King George Athens anchor the premium end of the tracked Syntagma set.'],
+      ['Best for transport', 'Syntagma is the cleanest central area fit when metro and airport movement matter.'],
+      ['Value note', 'Arethusa Hotel carries the lowest Syntagma price signal in the dataset.']
+    ],
+    faqs: [
+      ['Is Syntagma Square a good area to stay in Athens?', 'Yes. It is central, connected, and practical, especially for transport and luxury stays.'],
+      ['Is Syntagma better than Plaka?', 'Choose Syntagma for transport and city-centre logistics; choose Plaka for historic atmosphere.'],
+      ['Are there budget hotels near Syntagma Square?', 'The dataset includes at least one lower price-signal Syntagma hotel, but confirm live rates before booking.']
+    ]
+  },
+  {
+    slug: 'hotels-near-acropolis-museum-athens',
+    label: 'Acropolis Museum Hotels',
+    kicker: 'Museum',
+    title: 'Hotels Near Acropolis Museum Athens',
+    h1: 'Hotels Near the Acropolis Museum in Athens',
+    hero: 'Compare Plaka and Koukaki hotels for Acropolis Museum access, Acropolis walks, and quieter nearby stays.',
+    quickH2: 'For the Acropolis Museum, compare Plaka for old-city atmosphere and Koukaki for quieter value.',
+    quickP: 'Both Plaka and Koukaki work well for museum-focused stays. Plaka leans historic and central, while Koukaki can feel more local and residential.',
+    description: 'Compare hotels near the Acropolis Museum in Athens by area, price signal, view, rooftop bar, and traveler fit.',
+    caption: 'Plaka and Koukaki hotels useful for Acropolis Museum-focused stays.',
+    filter: h => ['plaka', 'koukaki'].includes(h.neighborhood),
+    sort: hotels => sortByScore(hotels),
+    notes: [
+      ['Choose Plaka if', 'You want the historic core and old-city streets around the museum trip.'],
+      ['Choose Koukaki if', 'You want a quieter neighborhood feel near the south side of the Acropolis.'],
+      ['Confirm route', 'Check the exact hotel address and walking route to the museum before booking.']
+    ],
+    faqs: [
+      ['Which area is best near the Acropolis Museum?', 'Plaka and Koukaki are the strongest starting points in this dataset.'],
+      ['Is Koukaki good for the Acropolis Museum?', 'Yes. Koukaki is a useful quieter base for the museum and south-side Acropolis access.'],
+      ['Do Acropolis Museum hotels have Acropolis views?', 'Some do, but view and museum proximity should be checked separately.']
+    ]
+  },
+  {
+    slug: 'romantic-hotels-athens',
+    label: 'Romantic Hotels',
+    kicker: 'Couples',
+    title: 'Romantic Hotels in Athens',
+    h1: 'Romantic Hotels in Athens',
+    hero: 'Compare Athens hotel starting points for couples, views, rooftops, boutique style, and special-occasion stays.',
+    quickH2: 'For romantic Athens stays, prioritize view, neighborhood feel, and whether the hotel has a rooftop or boutique signal.',
+    quickP: 'Plaka, Monastiraki, Syntagma, and Kolonaki offer the strongest mix of couples tags, Acropolis-view signals, rooftop signals, and premium stays in the dataset.',
+    description: 'Compare romantic hotels in Athens by couples fit, neighborhood, price signal, Acropolis view, rooftop bar, and style.',
+    caption: 'Athens hotels with couples, view, luxury, or boutique fit signals.',
+    filter: h => (h.bestFor || []).some(x => /couples|views|luxury|boutique|design/i.test(x)) || h.hasAcropolisView,
+    sort: hotels => sortByScore(hotels).slice(0, 12),
+    notes: [
+      ['Best for views', 'Acropolis-view and rooftop-bar signals matter more than star category alone.'],
+      ['Best for quiet style', 'Kolonaki and Koukaki can be better if nightlife is not the priority.'],
+      ['Best for classic setting', 'Plaka is the classic romantic Athens base for old-city atmosphere.']
+    ],
+    faqs: [
+      ['What is the most romantic area to stay in Athens?', 'Plaka is the classic choice, while Kolonaki and Koukaki can suit quieter couples trips.'],
+      ['Should couples choose a rooftop hotel in Athens?', 'A rooftop can be a strong fit if sunset views and on-site drinks matter, but confirm access and view type.'],
+      ['Are romantic hotels in Athens always expensive?', 'No. The dataset includes both premium and mid-range price signals with couples or view fit.']
+    ]
+  },
+  {
+    slug: 'cheap-hotels-near-acropolis-athens',
+    label: 'Cheap Near Acropolis',
+    kicker: 'Value',
+    title: 'Cheap Hotels Near Acropolis Athens',
+    h1: 'Cheap Hotels Near the Acropolis in Athens',
+    hero: 'Compare lower price-signal hotels in Acropolis-adjacent neighborhoods.',
+    quickH2: 'For cheaper Acropolis access, compare Monastiraki, Koukaki, and lower-price Plaka options.',
+    quickP: 'This page focuses on tracked hotels under €100/night in Plaka, Monastiraki, and Koukaki. Confirm live rates and the exact walking route before booking.',
+    description: 'Compare cheap hotels near the Acropolis in Athens by area, price signal, view signal, and traveler fit.',
+    caption: 'Tracked hotels under €100/night in Acropolis-adjacent Athens neighborhoods.',
+    filter: h => h.pricePerNight < 100 && ['plaka', 'monastiraki', 'koukaki'].includes(h.neighborhood),
+    sort: hotels => [...hotels].sort((a, b) => a.pricePerNight - b.pricePerNight),
+    notes: [
+      ['Lowest price signals', 'Hostel and pension-style options carry the lowest stored price signals.'],
+      ['Best central tradeoff', 'Monastiraki is strong if you want price, metro, and central energy together.'],
+      ['Quiet value tradeoff', 'Koukaki is better when you want a calmer area near the Acropolis.']
+    ],
+    faqs: [
+      ['Can I stay near the Acropolis cheaply?', 'Yes, but the cheapest options involve tradeoffs such as simpler rooms, hostel formats, or fewer amenities.'],
+      ['Which cheap area near the Acropolis should I compare first?', 'Start with Monastiraki and Koukaki, then compare lower-price Plaka options.'],
+      ['Do cheap hotels near the Acropolis have views?', 'Some lower-price tracked hotels show view signals, but confirm the exact room or terrace view before booking.']
+    ]
+  },
+  {
+    slug: 'athens-hotels-with-rooftop-pool',
+    label: 'Rooftop Pool Hotels',
+    kicker: 'Rooftop pool',
+    title: 'Athens Hotels with Rooftop Pool',
+    h1: 'Athens Hotels with Rooftop Pool Signals',
+    hero: 'Compare hotels where pool, rooftop, and view signals overlap in the tracked data.',
+    quickH2: 'Rooftop-pool style signals are limited and mostly premium in central Athens.',
+    quickP: 'Use this as a short list for further verification. Confirm whether the pool is rooftop, seasonal, guest-only, or tied to a specific room or spa policy before booking.',
+    description: 'Compare Athens hotels with rooftop and pool signals by neighborhood, price, Acropolis view, and traveler fit.',
+    caption: 'Athens hotels with both rooftop-bar and pool signals in the dataset.',
+    filter: h => h.hasRooftopBar && (h.amenities || []).some(a => /pool/i.test(a)),
+    sort: hotels => sortByScore(hotels),
+    notes: [
+      ['Best for premium views', 'These options skew luxury and view-oriented.'],
+      ['Verify pool access', 'Pool policies can vary by season, room type, and guest status.'],
+      ['Compare alternatives', 'If pool access matters more than rooftop views, also compare all Athens pool hotels.']
+    ],
+    faqs: [
+      ['Are there many Athens hotels with rooftop pools?', 'The tracked dataset shows only a small number of hotels where rooftop and pool signals overlap.'],
+      ['Are rooftop pools in Athens open year-round?', 'That depends on the hotel and season; confirm directly before booking.'],
+      ['Are rooftop pool hotels in Athens expensive?', 'The tracked rooftop-pool overlap skews upscale and luxury.']
+    ]
+  },
+  {
+    slug: 'luxury-hotels-in-plaka-athens',
+    label: 'Luxury Plaka Hotels',
+    kicker: 'Plaka luxury',
+    title: 'Luxury Hotels in Plaka Athens',
+    h1: 'Luxury Hotels in Plaka, Athens',
+    hero: 'Compare premium Plaka hotel options for historic atmosphere, Acropolis access, and view or rooftop signals.',
+    quickH2: 'Luxury Plaka is best when old-city atmosphere matters as much as the hotel itself.',
+    quickP: 'The premium Plaka set is small, so compare these options against Syntagma luxury hotels if broader service infrastructure matters more than historic streets.',
+    description: 'Compare luxury hotels in Plaka Athens by price signal, star category, Acropolis view, rooftop bar, and traveler fit.',
+    caption: 'Premium Plaka hotel options in the Hotels of Athens dataset.',
+    filter: h => h.neighborhood === 'plaka' && h.pricePerNight >= 150,
+    sort: hotels => sortByScore(hotels),
+    notes: [
+      ['Choose Plaka if', 'You want historic streets, old-city atmosphere, and short Acropolis access.'],
+      ['Compare Syntagma if', 'You want a larger classic luxury cluster and transport connections.'],
+      ['Verify view category', 'Premium Plaka hotels may have view signals, but not every room will share the same view.']
+    ],
+    faqs: [
+      ['Is Plaka good for luxury hotels?', 'Yes, if you value historic setting and Acropolis access. Syntagma has a broader classic luxury cluster.'],
+      ['Which Plaka luxury hotels have Acropolis-view signals?', 'The premium Plaka options shown on this page include Acropolis-view signals in the dataset.'],
+      ['Should I choose Plaka or Syntagma for luxury?', 'Choose Plaka for atmosphere and Acropolis access; choose Syntagma for transport and classic city-centre luxury.']
+    ]
+  }
+];
+
 // Helper: Generate hotel card HTML
 function generateHotelCard(hotel) {
   const badges = [];
@@ -335,6 +696,7 @@ function generateHomepage() {
     .replace('{{UPSCALE_COUNT}}', allHotelsData.priceStats.upscale.count)
     .replace('{{LUXURY_COUNT}}', allHotelsData.priceStats.luxury.count)
     .replace('{{NEIGHBORHOOD_MATRIX}}', renderNeighborhoodMatrix())
+    .replace('{{POPULAR_GUIDES}}', renderGuideLinks(intentGuides))
     .replace('{{NEIGHBORHOODS_GRID}}', neighborhoodsGrid)
     .replace('{{ACROPOLIS_VIEW_HOTELS}}', acropolisViewHotels)
     .replace('{{ROOFTOP_HOTELS}}', rooftopHotels);
@@ -1006,6 +1368,89 @@ function generateGuidePages() {
       schema: guideSchema(rooftopTitle, rooftopDescription, rooftopUrl, rooftopHotels, rooftopFaqs)
     })
   );
+
+  // Keyword-driven intent guides
+  for (const guide of intentGuides) {
+    const picked = uniqueHotels(siteHotels.filter(guide.filter));
+    const sorted = (guide.sort ? guide.sort(picked) : sortByScore(picked)).slice(0, 14);
+    const url = `${siteUrl}/${guide.slug}`;
+    const faqs = guide.faqs.map(([question, answer]) => ({ question, answer }));
+    const notes = guide.notes.map(([heading, body]) => `
+      <div class="info-panel">
+        <h3>${escapeHtml(heading)}</h3>
+        <p>${escapeHtml(body)}</p>
+      </div>
+    `).join('');
+    const nearbyLinks = neighborhoodsData.neighborhoods
+      .filter(hood => sorted.some(hotel => hotel.neighborhood === hood.id))
+      .map(hood => `<a href="/athens-hotels/${hood.id}">${escapeHtml(hood.name)} hotels</a>`)
+      .join('');
+
+    const content = `
+      <section class="guide-hero">
+        <div class="container">
+          <nav class="breadcrumb"><a href="/">Home</a> → <span>${escapeHtml(guide.h1)}</span></nav>
+          <h1>${escapeHtml(guide.h1)}</h1>
+          <p>${escapeHtml(guide.hero)}</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="quick-answer">
+            <p class="eyebrow">Quick answer</p>
+            <h2>${escapeHtml(guide.quickH2)}</h2>
+            <p>${escapeHtml(guide.quickP)}</p>
+            <div class="answer-links">
+              <a href="#compare-hotels">Compare hotels</a>
+              <a href="#how-to-choose">How to choose</a>
+              <a href="#faqs">FAQs</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-alt" id="compare-hotels">
+        <div class="container">
+          <h2 class="section-title">${escapeHtml(guide.h1)} Compared</h2>
+          <p class="section-subtitle">This table uses visible Hotels of Athens data: neighborhood, price signal, star category, Acropolis-view flag, rooftop-bar flag, amenities, and traveler-fit tags.</p>
+          ${renderHotelComparisonTable(sorted, guide.caption)}
+        </div>
+      </section>
+      <section class="section" id="how-to-choose">
+        <div class="container">
+          <h2 class="section-title">How to Choose</h2>
+          <div class="content-grid">${notes}</div>
+        </div>
+      </section>
+      <section class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Source and Selection Notes</h2>
+          <div class="methodology">
+            <p>Hotels are included when their stored Hotels of Athens fields match this page’s criteria. The page does not use unsupported review scores, fake rankings, or invented live availability. Treat prices as directional signals and confirm live rates, room type, cancellation terms, access rules, and views before booking.</p>
+          </div>
+          <div class="answer-links guide-nearby-links">${nearbyLinks}</div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">All Matching Hotels</h2>
+          <div class="hotels-grid">${sorted.map(generateHotelCard).join('')}</div>
+        </div>
+      </section>
+      <section class="section section-alt" id="faqs">
+        <div class="container">
+          <h2 class="section-title">FAQs: ${escapeHtml(guide.h1)}</h2>
+          ${renderFaqDetails(faqs)}
+        </div>
+      </section>
+    `;
+
+    fs.writeFileSync(
+      path.join(distDir, `${guide.slug}.html`),
+      wrapInLayout(content, guide.title, guide.description, url, {
+        schema: guideSchema(guide.title, guide.description, url, sorted, faqs)
+      })
+    );
+  }
 }
 
 // Generate Sitemap
@@ -1020,6 +1465,10 @@ function generateSitemap() {
     { loc: 'https://hotelsofathens.com/budget-hotels-athens', priority: '0.8' },
     { loc: 'https://hotelsofathens.com/luxury-hotels-athens', priority: '0.8' },
     { loc: 'https://hotelsofathens.com/best-rooftop-bars-athens', priority: '0.8' },
+    ...intentGuides.map(guide => ({
+      loc: `https://hotelsofathens.com/${guide.slug}`,
+      priority: '0.82'
+    })),
     ...neighborhoodsData.neighborhoods.map(n => ({
       loc: `https://hotelsofathens.com/athens-hotels/${n.id}`,
       priority: '0.9'
@@ -1077,7 +1526,16 @@ function generateRedirects() {
   console.log('📄 Generating _redirects...');
   
   const redirects = `/index.html  /  301
-/area/*  /athens-hotels/:splat  301`;
+/area/*  /athens-hotels/:splat  301
+/hotels-with-acropolis-view-athens  /acropolis-view-hotels-athens  301
+/athens-hotels-with-view-of-acropolis  /acropolis-view-hotels-athens  301
+/best-hotels-near-acropolis  /hotels-near-acropolis-athens  301
+/piraeus-port-hotels  /hotels-near-piraeus-port  301
+/hotels-near-piraeus-ferry-terminal  /hotels-near-piraeus-port  301
+/hotels-near-syntagma-square-athens  /syntagma-square-hotels  301
+/best-area-to-stay-in-athens  /where-to-stay-in-athens  301
+/best-neighborhood-to-stay-in-athens  /where-to-stay-in-athens  301
+/hotels-in-athens-with-rooftop-pool  /athens-hotels-with-rooftop-pool  301`;
   
   fs.writeFileSync(path.join(distDir, '_redirects'), redirects);
 }
