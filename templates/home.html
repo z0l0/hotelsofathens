@@ -2,8 +2,12 @@
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="container">
-    <h1>Discover Athens Hotels</h1>
-    <p class="hero-subtitle">Compare {{TOTAL_HOTELS}}+ hotels across 8 neighborhoods. Find your perfect stay near the Acropolis.</p>
+    <h1>Athens Hotels by Neighborhood, Budget & View</h1>
+    <p class="hero-subtitle">Compare {{TOTAL_HOTELS}} Athens hotels across 8 neighborhoods, from Acropolis-view stays in Plaka to budget bases near metro and ferry links.</p>
+    <div class="hero-actions">
+      <a href="/where-to-stay-in-athens" class="btn btn-primary">Find your best area</a>
+      <a href="/best-hotels-athens" class="btn btn-ghost">Compare top picks</a>
+    </div>
     <div class="hero-stats">
       <div class="stat">
         <span class="stat-value">{{TOTAL_HOTELS}}+</span>
@@ -17,6 +21,48 @@
         <span class="stat-value">€{{AVG_PRICE}}</span>
         <span class="stat-label">Avg/Night</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quick Answer -->
+<section class="section">
+  <div class="container">
+    <div class="quick-answer">
+      <p class="eyebrow">Quick answer</p>
+      <h2>For a first Athens trip, start with Plaka, Monastiraki, Syntagma, or Koukaki.</h2>
+      <p>Plaka is the easiest historic base, Monastiraki is best for markets and nightlife, Syntagma is the most connected luxury/business base, and Koukaki is the quieter value pick near the Acropolis. Use the tables below to compare real hotel counts, nightly price signals, rooftop bars, and Acropolis-view options.</p>
+      <div class="answer-links">
+        <a href="/athens-hotels/plaka">Plaka hotels</a>
+        <a href="/athens-hotels/monastiraki">Monastiraki hotels</a>
+        <a href="/athens-hotels/syntagma">Syntagma hotels</a>
+        <a href="/athens-hotels/koukaki">Koukaki hotels</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Guide Cards -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Plan by Decision, Not Just by Hotel Name</h2>
+    <p class="section-subtitle">These guides turn the hotel data into practical choices for common Athens travel searches.</p>
+    <div class="guide-card-grid">
+      <a class="guide-card" href="/where-to-stay-in-athens">
+        <span class="guide-kicker">Neighborhood guide</span>
+        <h3>Where to Stay in Athens</h3>
+        <p>Compare areas for first-timers, nightlife, ferry transfers, quiet stays, and Acropolis access.</p>
+      </a>
+      <a class="guide-card" href="/best-hotels-athens">
+        <span class="guide-kicker">Comparison guide</span>
+        <h3>Best Hotels in Athens</h3>
+        <p>See criteria-based hotel picks by budget, style, view, rooftop, and traveler fit.</p>
+      </a>
+      <a class="guide-card" href="/best-rooftop-bars-athens">
+        <span class="guide-kicker">View guide</span>
+        <h3>Rooftop Bar Hotels</h3>
+        <p>Compare rooftop hotel options with Acropolis-view and price-tier signals.</p>
+      </a>
     </div>
   </div>
 </section>
@@ -51,6 +97,15 @@
         <span class="tier-count">{{LUXURY_COUNT}} hotels</span>
       </a>
     </div>
+  </div>
+</section>
+
+<!-- Neighborhood Decision Matrix -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Athens Neighborhood Hotel Matrix</h2>
+    <p class="section-subtitle">A quick way to compare the areas this site tracks before opening individual hotel pages.</p>
+    {{NEIGHBORHOOD_MATRIX}}
   </div>
 </section>
 

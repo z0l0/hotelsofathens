@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{PAGE_TITLE}} | Hotels of Athens</title>
+  <title>{{FULL_PAGE_TITLE}}</title>
   <meta name="description" content="{{PAGE_DESCRIPTION}}">
+  <link rel="canonical" href="{{PAGE_URL}}">
   
   <!-- Open Graph -->
-  <meta property="og:title" content="{{PAGE_TITLE}} | Hotels of Athens">
+  <meta property="og:title" content="{{FULL_PAGE_TITLE}}">
   <meta property="og:description" content="{{PAGE_DESCRIPTION}}">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="{{OG_TYPE}}">
   <meta property="og:url" content="{{PAGE_URL}}">
   <meta property="og:image" content="https://hotelsofathens.com/images/og.jpg?v=3">
   <meta property="og:image:width" content="1200">
@@ -18,7 +19,7 @@
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{PAGE_TITLE}} | Hotels of Athens">
+  <meta name="twitter:title" content="{{FULL_PAGE_TITLE}}">
   <meta name="twitter:description" content="{{PAGE_DESCRIPTION}}">
   <meta name="twitter:image" content="https://hotelsofathens.com/images/og.jpg?v=3">
   
@@ -35,13 +36,7 @@
   
   <!-- Schema.org -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Hotels of Athens",
-    "url": "https://hotelsofathens.com",
-    "description": "Compare Athens hotels by neighborhood, price, and amenities"
-  }
+  {{STRUCTURED_DATA}}
   </script>
 </head>
 <body>
@@ -52,10 +47,11 @@
         <span class="logo-text">Hotels of Athens</span>
       </a>
       <nav class="nav">
+        <a href="/where-to-stay-in-athens">Where to Stay</a>
+        <a href="/best-hotels-athens">Best Hotels</a>
         <a href="/athens-hotels/plaka">Neighborhoods</a>
         <a href="/budget-hotels-athens">Budget</a>
-        <a href="/luxury-hotels-athens">Luxury</a>
-        <a href="/contact">Contact</a>
+        <a href="/best-rooftop-bars-athens">Rooftops</a>
       </nav>
       <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     </div>
@@ -82,9 +78,11 @@
         </div>
         <div class="footer-links">
           <h4>Guides</h4>
+          <a href="/where-to-stay-in-athens">Where to Stay in Athens</a>
+          <a href="/best-hotels-athens">Best Hotels in Athens</a>
           <a href="/budget-hotels-athens">Budget Hotels</a>
           <a href="/luxury-hotels-athens">Luxury Hotels</a>
-          <a href="/best-rooftop-bars-athens">Rooftop Bars</a>
+          <a href="/best-rooftop-bars-athens">Rooftop Bar Hotels</a>
         </div>
         <div class="footer-links">
           <h4>Info</h4>
