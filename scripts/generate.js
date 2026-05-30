@@ -288,6 +288,15 @@ function sortByScore(hotels) {
   });
 }
 
+const ultraLuxuryGuide = {
+  slug: 'ultra-luxury-athens-villas-suites',
+  label: 'Ultra-Luxury Villas & Suites',
+  kicker: 'Money-no-object',
+  title: 'Ultra-Luxury Athens Villas & Presidential Suites',
+  h1: 'Ultra-Luxury Athens Villas, Presidential Suites & Helicopter Transfers',
+  description: 'Compare Athens trophy stays: presidential suites, private Riviera villas, Amanzoe Villa 20, helicopter transfers, and quote-only luxury.'
+};
+
 const intentGuides = [
   {
     slug: 'hotels-near-acropolis-athens',
@@ -696,7 +705,7 @@ function generateHomepage() {
     .replace('{{UPSCALE_COUNT}}', allHotelsData.priceStats.upscale.count)
     .replace('{{LUXURY_COUNT}}', allHotelsData.priceStats.luxury.count)
     .replace('{{NEIGHBORHOOD_MATRIX}}', renderNeighborhoodMatrix())
-    .replace('{{POPULAR_GUIDES}}', renderGuideLinks(intentGuides))
+    .replace('{{POPULAR_GUIDES}}', renderGuideLinks([ultraLuxuryGuide, ...intentGuides]))
     .replace('{{NEIGHBORHOODS_GRID}}', neighborhoodsGrid)
     .replace('{{ACROPOLIS_VIEW_HOTELS}}', acropolisViewHotels)
     .replace('{{ROOFTOP_HOTELS}}', rooftopHotels);
@@ -1254,6 +1263,9 @@ function generateGuidePages() {
           <div class="info-panel"><h3>Choose Plaka if</h3><p>You want historic atmosphere, Acropolis access, and a premium stay embedded in the old city.</p></div>
           <div class="info-panel"><h3>Choose Kolonaki if</h3><p>You want a more polished neighborhood base with boutiques, cafes, and Lycabettus-side atmosphere.</p></div>
         </div>
+        <div class="fit-summary guide-callout">
+          <p>Shopping above ordinary five-star luxury? Compare the <a href="/ultra-luxury-athens-villas-suites">ultra-luxury Athens villas and presidential suites guide</a> for Hotel Grande Bretagne Royal Suite, One&Only Aesthesis villas, Four Seasons Astir Palace, Amanzoe Villa 20, and helicopter-transfer planning.</p>
+        </div>
       </div>
     </section>
     <section class="section section-alt">
@@ -1369,6 +1381,270 @@ function generateGuidePages() {
     })
   );
 
+  // Ultra-luxury villas and presidential suites guide
+  const ultraTitle = ultraLuxuryGuide.title;
+  const ultraDescription = ultraLuxuryGuide.description;
+  const ultraUrl = `${siteUrl}/${ultraLuxuryGuide.slug}`;
+  const ultraFaqs = [
+    {
+      question: 'What is the most expensive stay near Athens?',
+      answer: 'For pure shock value, Amanzoe Villa 20 near Porto Heli is the ceiling to compare: luxury-travel sources report roughly $45,000 to $55,000+ per night in peak season, while the official Aman page positions it as a quote/enquiry villa with nine bedrooms, 11 pools, and a private spa.'
+    },
+    {
+      question: 'What is the most luxurious hotel suite in central Athens?',
+      answer: 'Hotel Grande Bretagne Royal Suite is the central Athens trophy-suite benchmark because Marriott describes it as a 400-square-meter one-bedroom residence on the fifth floor. Four Seasons Astir Palace adds a Riviera alternative with its 210-square-meter Arion Presidential Suite, rooftop garden, plunge pool, and dedicated personal assistant service.'
+    },
+    {
+      question: 'Can ultra-luxury travelers use helicopter transfers around Athens?',
+      answer: 'Yes. Current luxury aviation pages advertise private helicopter access from Athens-area helipads to Greek resorts, with Fly G Aviation listing 35-90 minute resort transfers from EUR2,350 per aircraft. Exact routes, passenger limits, luggage limits, weather, and landing permissions need confirmation.'
+    }
+  ];
+  const ultraSources = [
+    ['One&Only Aesthesis Villa One', 'https://www.oneandonlyresorts.com/aesthesis/accommodation/villa-one'],
+    ['One&Only Aesthesis Three-Bedroom Villa', 'https://www.oneandonlyresorts.com/aesthesis/private-homes/stays/three-bedroom'],
+    ['Four Seasons Astir Palace Arion Presidential Suite', 'https://www.fourseasons.com/athens/accommodations/specialty-suites/arion-presidential-suite/'],
+    ['Hotel Grande Bretagne Royal Suite', 'https://www.marriott.com/luxury/signature-accommodations/hotel-grande-bretagne-athens'],
+    ['Amanzoe Villas', 'https://www.aman.com/resorts/amanzoe/accommodation/villas'],
+    ['Amanzoe Villa 20', 'https://www.aman.com/resorts/amanzoe/accommodation/villa/villa-20'],
+    ['Grand Resort Lagonissi Royal Villa', 'https://www.lagonissiresort.gr/accommodation/athens-luxury-royal-villa/'],
+    ['Fly G Aviation helicopter resort transfers', 'https://flyg.gr/blog/6676-private-helicopter-access-to-greece%E2%80%99s-top-luxury-resorts.html'],
+    ['Elite Traveler Villa 20 rate reference', 'https://elitetraveler.com/suites/17017/villa-20'],
+    ['Suites & Villas Villa 20 rate reference', 'https://suitesandvillas.com/suites/villa/amanzoe-villa-20']
+  ];
+  const ultraRows = [
+    {
+      name: 'Amanzoe Villa 20',
+      place: 'Porto Heli, helicopter/drive from Athens',
+      flex: 'Nine bedrooms, 11 pools, private spa, Greek taverna, art-filled private-home scale.',
+      money: 'Reported around $45k-$55k+ per night by luxury-suite publishers; official booking is enquiry-led.',
+      source: '<a href="https://www.aman.com/resorts/amanzoe/accommodation/villa/villa-20">Official</a> / <a href="https://elitetraveler.com/suites/17017/villa-20">rate reference</a>'
+    },
+    {
+      name: 'One&Only Aesthesis Villa One',
+      place: 'Glyfada, Athenian Riviera',
+      flex: 'Two-bedroom seafront villa, 519 sqm indoors, 922 sqm outdoors, central pool, private gym, staff quarters.',
+      money: 'Date-dependent resort villa pricing; larger group configurations are handled by reservations.',
+      source: '<a href="https://www.oneandonlyresorts.com/aesthesis/accommodation/villa-one">Official</a>'
+    },
+    {
+      name: 'One&Only Aesthesis Three-Bedroom Villa',
+      place: 'Glyfada, Athenian Riviera',
+      flex: 'Outer-connected private homes for up to six guests, private pools, patios, gardens, kitchens, and sea-view positioning.',
+      money: 'Quote/check-rate territory, especially for summer and multi-villa stays.',
+      source: '<a href="https://www.oneandonlyresorts.com/aesthesis/private-homes/stays/three-bedroom">Official</a>'
+    },
+    {
+      name: 'Four Seasons Astir Palace Arion Presidential Suite',
+      place: 'Vouliagmeni, Athens Riviera',
+      flex: '210 sqm penthouse with rooftop garden, plunge pool, sea views, dining for 10, office, walk-in closet.',
+      money: 'Official page pushes check-rates; travel press has cited five-figure high-season suite pricing.',
+      source: '<a href="https://www.fourseasons.com/athens/accommodations/specialty-suites/arion-presidential-suite/">Official</a>'
+    },
+    {
+      name: 'Hotel Grande Bretagne Royal Suite',
+      place: 'Syntagma Square, central Athens',
+      flex: '400 sqm one-bedroom, two-bathroom residence with museum-quality antiques, fifth-floor position, and wine-cellar access.',
+      money: 'Central-Athens trophy suite; confirm live rate, security needs, and VIP arrival privately.',
+      source: '<a href="https://www.marriott.com/luxury/signature-accommodations/hotel-grande-bretagne-athens">Official</a>'
+    },
+    {
+      name: 'Grand Resort Lagonissi Royal Villa',
+      place: 'Athens Riviera, Lagonissi',
+      flex: 'Two master bedrooms, indoor and outdoor heated pools, gym, steam bath, massage area, butler quarters, private path to the bay.',
+      money: 'Quote/check-rate trophy villa; best for guests who want full seaside-resort privacy near Athens.',
+      source: '<a href="https://www.lagonissiresort.gr/accommodation/athens-luxury-royal-villa/">Official</a>'
+    }
+  ];
+  const ultraContent = `
+    <section class="guide-hero luxe-hero">
+      <div class="container">
+        <nav class="breadcrumb"><a href="/">Home</a> → <span>Ultra-Luxury Athens</span></nav>
+        <p class="guide-kicker">Money-no-object Athens</p>
+        <h1>${escapeHtml(ultraLuxuryGuide.h1)}</h1>
+        <p>The real flex is not just a five-star room. It is a Riviera villa with staff quarters, a central Athens royal suite, a quote-only Aman estate, and a helicopter plan that turns Athens into the launchpad for the Greek one-percent itinerary.</p>
+        <div class="luxe-stat-grid">
+          <div><strong>$55k+</strong><span>reported Villa 20 nightly ceiling</span></div>
+          <div><strong>400 sqm</strong><span>Hotel Grande Bretagne Royal Suite</span></div>
+          <div><strong>11 pools</strong><span>Amanzoe Villa 20 official feature</span></div>
+          <div><strong>EUR2,350+</strong><span>published helicopter transfer floor</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="quick-answer">
+          <p class="eyebrow">Quick answer</p>
+          <h2>The Athens ultra-luxury ceiling is not a normal hotel room. It is Villa 20 at Amanzoe, Villa One at One&Only Aesthesis, Four Seasons Astir Palace suites, and Hotel Grande Bretagne's Royal Suite.</h2>
+          <p>If the brief is "absolute top of the top", compare three lanes: central power-suite luxury at Hotel Grande Bretagne, Athens Riviera villas at One&Only Aesthesis or Grand Resort Lagonissi, and Amanzoe Villa 20 as the helicopter-away Greek trophy stay. Public rates are often hidden or date-sensitive, but luxury-suite publishers put Amanzoe Villa 20 in the roughly $45,000-$55,000+ per night conversation in peak season.</p>
+          <div class="answer-links">
+            <a href="#luxe-shortlist">Shortlist</a>
+            <a href="#money-ladder">Money ladder</a>
+            <a href="#transfer-flex">Helicopter flex</a>
+            <a href="#sources">Sources</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-alt" id="luxe-shortlist">
+      <div class="container">
+        <h2 class="section-title">Ultra-Luxury Athens Shortlist</h2>
+        <p class="section-subtitle">A source-backed comparison of the stays that actually feel headline-level, not just expensive.</p>
+        <div class="table-wrap">
+          <table class="comparison-table luxe-table">
+            <thead>
+              <tr>
+                <th>Stay</th>
+                <th>Where</th>
+                <th>Eyeball Grabber</th>
+                <th>Money Signal</th>
+                <th>Source</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${ultraRows.map(row => `
+                <tr>
+                  <td data-label="Stay">${escapeHtml(row.name)}</td>
+                  <td data-label="Where">${escapeHtml(row.place)}</td>
+                  <td data-label="Eyeball Grabber">${escapeHtml(row.flex)}</td>
+                  <td data-label="Money Signal">${escapeHtml(row.money)}</td>
+                  <td data-label="Source">${row.source}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="money-ladder">
+      <div class="container">
+        <h2 class="section-title">How Expensive Can Athens Get?</h2>
+        <div class="content-grid">
+          <div class="info-panel luxe-panel">
+            <p class="guide-kicker">Central power suite</p>
+            <h3>Royal-suite Athens</h3>
+            <p>Use Hotel Grande Bretagne Royal Suite or Four Seasons Arion Presidential Suite when the trip needs security, staff, driver logistics, and landmark address value more than a resort compound.</p>
+          </div>
+          <div class="info-panel luxe-panel">
+            <p class="guide-kicker">Riviera villa</p>
+            <h3>Private-pool resort living</h3>
+            <p>Use One&Only Aesthesis, Four Seasons Astir Palace, or Grand Resort Lagonissi when the buyer wants Athens access plus sea, terraces, private pools, staffable space, and beach-club energy.</p>
+          </div>
+          <div class="info-panel luxe-panel">
+            <p class="guide-kicker">Greek billionaire mode</p>
+            <h3>Helicopter-away Aman</h3>
+            <p>Use Amanzoe Villa 20 when the ask is the largest story: nine bedrooms, 11 pools, a private spa, a villa host/team model, and a reported peak-season price that can sit above many luxury yachts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-alt" id="transfer-flex">
+      <div class="container">
+        <h2 class="section-title">The Transfer Flex: Helicopter, Yacht, or Armored Chauffeur?</h2>
+        <div class="area-stack">
+          <article class="area-panel">
+            <div>
+              <h3>Helicopter transfer</h3>
+              <p>Current private-aviation SERPs show Athens-based resort transfers as a real ultra-luxury add-on. Fly G Aviation publishes Greece luxury-resort helicopter transfers of 35-90 minutes from EUR2,350 per aircraft, with aircraft, luggage, weather, and landing permissions to confirm.</p>
+            </div>
+            <dl class="signal-list">
+              <div><dt>Best for</dt><dd>Amanzoe, island hops, tight schedules</dd></div>
+              <div><dt>Check</dt><dd>Payload, luggage, helipad, VAT</dd></div>
+            </dl>
+          </article>
+          <article class="area-panel">
+            <div>
+              <h3>Chauffeur and security</h3>
+              <p>For central Athens, the smoother flex is often not a helicopter. It is a discreet airport arrival, luxury van or S-Class transfer, luggage advance, security coordination, and suite check-in without lobby friction.</p>
+            </div>
+            <dl class="signal-list">
+              <div><dt>Best for</dt><dd>Grande Bretagne, King George, Syntagma</dd></div>
+              <div><dt>Check</dt><dd>Arrival route, privacy, motorcade needs</dd></div>
+            </dl>
+          </article>
+          <article class="area-panel">
+            <div>
+              <h3>Yacht day or sea transfer</h3>
+              <p>Athens Riviera villas can layer in yacht days, Saronic island runs, and private beach-club logistics. Treat this as a separate quote because sea state, crew, fuel, berth, and catering can move the final bill fast.</p>
+            </div>
+            <dl class="signal-list">
+              <div><dt>Best for</dt><dd>Riviera villas, Lagonissi, Vouliagmeni</dd></div>
+              <div><dt>Check</dt><dd>Boat class, crew, fuel, route</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">What to Ask Before You Wire Serious Money</h2>
+        <div class="fit-summary">
+          <ul>
+            <li>Is the quoted rate for the exact villa/suite, dates, taxes, service charge, and minimum stay?</li>
+            <li>Does the villa include a dedicated host, chef, security coordination, daily breakfast, airport meet-and-greet, packing/unpacking, or massage credits?</li>
+            <li>Are the private pool, rooftop garden, spa, gym, staff quarters, and beach access private or shared?</li>
+            <li>What are the exact helicopter luggage limits, weather fallback, cancellation rules, and ground-transfer legs?</li>
+            <li>For Acropolis or sea views, is the view from the bedroom, terrace, rooftop, restaurant, or only the property grounds?</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section section-alt" id="sources">
+      <div class="container">
+        <h2 class="section-title">Sources and Reality Check</h2>
+        <div class="methodology">
+          <p>This page uses current web research plus official hotel/resort pages checked on May 30, 2026. Public pages for the very top villas often use enquiry or check-rate flows rather than publishing a stable nightly rate. Rate figures marked as reported come from luxury-travel publishers and should be treated as directional until confirmed directly with the property or a top-tier travel advisor.</p>
+          <div class="answer-links guide-nearby-links">
+            ${ultraSources.map(([label, url]) => `<a href="${url}">${escapeHtml(label)}</a>`).join('')}
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Keep Comparing</h2>
+        <div class="guide-link-grid">
+          <a class="guide-link" href="/luxury-hotels-athens"><span>Luxury hotels</span><strong>Compare tracked 5-star Athens hotels</strong></a>
+          <a class="guide-link" href="/5-star-hotels-athens"><span>5-star</span><strong>5-Star Hotels in Athens</strong></a>
+          <a class="guide-link" href="/acropolis-view-hotels-athens"><span>Views</span><strong>Acropolis View Hotels</strong></a>
+          <a class="guide-link" href="/athens-hotels-with-rooftop-pool"><span>Pool</span><strong>Athens Hotels with Rooftop Pool Signals</strong></a>
+        </div>
+      </div>
+    </section>
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">FAQs: Ultra-Luxury Athens</h2>
+        ${renderFaqDetails(ultraFaqs)}
+      </div>
+    </section>
+  `;
+  const ultraSchema = [
+    pageSchema('CollectionPage', ultraTitle, ultraDescription, ultraUrl),
+    breadcrumbSchema([
+      { name: 'Home', url: siteUrl },
+      { name: 'Ultra-Luxury Athens', url: ultraUrl }
+    ]),
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: 'Ultra-luxury Athens villas and suites shortlist',
+      url: ultraUrl,
+      numberOfItems: ultraRows.length,
+      itemListElement: ultraRows.map((row, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: row.name
+      }))
+    },
+    faqSchema(ultraFaqs)
+  ];
+
+  fs.writeFileSync(
+    path.join(distDir, `${ultraLuxuryGuide.slug}.html`),
+    wrapInLayout(ultraContent, ultraTitle, ultraDescription, ultraUrl, {
+      schema: ultraSchema
+    })
+  );
+
   // Keyword-driven intent guides
   for (const guide of intentGuides) {
     const picked = uniqueHotels(siteHotels.filter(guide.filter));
@@ -1464,6 +1740,7 @@ function generateSitemap() {
     { loc: 'https://hotelsofathens.com/best-hotels-athens', priority: '0.95' },
     { loc: 'https://hotelsofathens.com/budget-hotels-athens', priority: '0.8' },
     { loc: 'https://hotelsofathens.com/luxury-hotels-athens', priority: '0.8' },
+    { loc: `https://hotelsofathens.com/${ultraLuxuryGuide.slug}`, priority: '0.86' },
     { loc: 'https://hotelsofathens.com/best-rooftop-bars-athens', priority: '0.8' },
     ...intentGuides.map(guide => ({
       loc: `https://hotelsofathens.com/${guide.slug}`,
@@ -1535,6 +1812,10 @@ function generateRedirects() {
 /hotels-near-syntagma-square-athens  /syntagma-square-hotels  301
 /best-area-to-stay-in-athens  /where-to-stay-in-athens  301
 /best-neighborhood-to-stay-in-athens  /where-to-stay-in-athens  301
+/most-expensive-hotels-athens  /ultra-luxury-athens-villas-suites  301
+/presidential-suite-athens  /ultra-luxury-athens-villas-suites  301
+/luxury-villas-athens  /ultra-luxury-athens-villas-suites  301
+/athens-presidential-suites  /ultra-luxury-athens-villas-suites  301
 /hotels-in-athens-with-rooftop-pool  /athens-hotels-with-rooftop-pool  301`;
   
   fs.writeFileSync(path.join(distDir, '_redirects'), redirects);
