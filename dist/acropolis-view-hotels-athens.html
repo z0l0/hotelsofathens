@@ -198,7 +198,7 @@
         <span class="logo-icon">🏛️</span>
         <span class="logo-text">Hotels of Athens</span>
       </a>
-      <nav class="nav">
+      <nav class="nav" id="site-nav">
         <a href="/where-to-stay-in-athens">Where to Stay</a>
         <a href="/best-hotels-athens">Best Hotels</a>
         <a href="/athens-hotels/plaka">Neighborhoods</a>
@@ -206,7 +206,7 @@
         <a href="/ultra-luxury-athens-villas-suites">Ultra Luxe</a>
         <a href="/best-rooftop-bars-athens">Rooftops</a>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">☰</button>
     </div>
   </header>
 
@@ -333,7 +333,7 @@
         <div class="container">
           <h2 class="section-title">Source and Selection Notes</h2>
           <div class="methodology">
-            <p>Hotels are included when their stored Hotels of Athens fields match this page’s criteria. The page does not use unsupported review scores, fake rankings, or invented live availability. Treat prices as directional signals and confirm live rates, room type, cancellation terms, access rules, and views before booking.</p>
+            <p>Hotels are included when their Hotels of Athens fields match this page’s criteria. The page does not use unsupported review scores or invented live availability. Treat prices as directional signals and confirm live rates, room type, cancellation terms, access rules, and views before booking.</p>
           </div>
           <div class="answer-links guide-nearby-links"><a href="/athens-hotels/plaka">Plaka hotels</a><a href="/athens-hotels/monastiraki">Monastiraki hotels</a><a href="/athens-hotels/syntagma">Syntagma hotels</a><a href="/athens-hotels/kolonaki">Kolonaki hotels</a><a href="/athens-hotels/koukaki">Koukaki hotels</a></div>
         </div>
@@ -343,7 +343,7 @@
           <h2 class="section-title">All Matching Hotels</h2>
           <div class="hotels-grid">
     <a href="/hotel/st-george-lycabettus-athens" class="hotel-card" data-tier="luxury" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-kolonaki" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>St. George Lycabettus</h3>
         <div class="hotel-card-meta">
@@ -361,7 +361,7 @@
     </a>
   
     <a href="/hotel/electra-palace-athens-athens" class="hotel-card" data-tier="luxury" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-plaka" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>Electra Palace Athens</h3>
         <div class="hotel-card-meta">
@@ -379,7 +379,7 @@
     </a>
   
     <a href="/hotel/king-george-athens-athens" class="hotel-card" data-tier="luxury" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-syntagma" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>King George Athens</h3>
         <div class="hotel-card-meta">
@@ -397,7 +397,7 @@
     </a>
   
     <a href="/hotel/hotel-grande-bretagne-athens" class="hotel-card" data-tier="luxury" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-syntagma" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>Hotel Grande Bretagne</h3>
         <div class="hotel-card-meta">
@@ -415,7 +415,7 @@
     </a>
   
     <a href="/hotel/a-for-athens-athens" class="hotel-card" data-tier="upscale" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-monastiraki" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>A for Athens</h3>
         <div class="hotel-card-meta">
@@ -433,7 +433,7 @@
     </a>
   
     <a href="/hotel/360-degrees-hotel-athens" class="hotel-card" data-tier="mid" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-monastiraki" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>360 Degrees Hotel</h3>
         <div class="hotel-card-meta">
@@ -451,7 +451,7 @@
     </a>
   
     <a href="/hotel/herodion-hotel-athens" class="hotel-card" data-tier="upscale" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-plaka" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>Herodion Hotel</h3>
         <div class="hotel-card-meta">
@@ -469,7 +469,7 @@
     </a>
   
     <a href="/hotel/ob-athens-boutique-hotel-athens" class="hotel-card" data-tier="upscale" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-monastiraki" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>O&B Athens Boutique Hotel</h3>
         <div class="hotel-card-meta">
@@ -487,7 +487,7 @@
     </a>
   
     <a href="/hotel/ava-hotel-athens-athens" class="hotel-card" data-tier="upscale" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-plaka" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>AVA Hotel Athens</h3>
         <div class="hotel-card-meta">
@@ -505,7 +505,7 @@
     </a>
   
     <a href="/hotel/njv-athens-plaza-athens" class="hotel-card" data-tier="upscale" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-syntagma" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>NJV Athens Plaza</h3>
         <div class="hotel-card-meta">
@@ -523,7 +523,7 @@
     </a>
   
     <a href="/hotel/athens-backpackers-athens" class="hotel-card" data-tier="budget" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-monastiraki" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>Athens Backpackers</h3>
         <div class="hotel-card-meta">
@@ -541,7 +541,7 @@
     </a>
   
     <a href="/hotel/attalos-hotel-athens" class="hotel-card" data-tier="budget" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-monastiraki" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>Attalos Hotel</h3>
         <div class="hotel-card-meta">
@@ -559,7 +559,7 @@
     </a>
   
     <a href="/hotel/acropolis-hill-hotel-athens" class="hotel-card" data-tier="mid" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-koukaki" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>Acropolis Hill Hotel</h3>
         <div class="hotel-card-meta">
@@ -577,7 +577,7 @@
     </a>
   
     <a href="/hotel/plaka-hotel-athens" class="hotel-card" data-tier="mid" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-plaka" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>Plaka Hotel</h3>
         <div class="hotel-card-meta">
@@ -660,8 +660,11 @@
   </footer>
 
   <script>
-    document.querySelector('.nav-toggle').addEventListener('click', () => {
-      document.querySelector('.nav').classList.toggle('nav-open');
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
     });
   </script>
 </body>

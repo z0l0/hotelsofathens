@@ -138,7 +138,7 @@
         <span class="logo-icon">🏛️</span>
         <span class="logo-text">Hotels of Athens</span>
       </a>
-      <nav class="nav">
+      <nav class="nav" id="site-nav">
         <a href="/where-to-stay-in-athens">Where to Stay</a>
         <a href="/best-hotels-athens">Best Hotels</a>
         <a href="/athens-hotels/plaka">Neighborhoods</a>
@@ -146,7 +146,7 @@
         <a href="/ultra-luxury-athens-villas-suites">Ultra Luxe</a>
         <a href="/best-rooftop-bars-athens">Rooftops</a>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">☰</button>
     </div>
   </header>
 
@@ -155,11 +155,22 @@
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="container">
-    <h1>Athens Hotels by Neighborhood, Budget & View</h1>
-    <p class="hero-subtitle">Compare 33 Athens hotels across 8 neighborhoods, from Acropolis-view stays in Plaka to budget bases near metro and ferry links.</p>
-    <div class="hero-actions">
-      <a href="/where-to-stay-in-athens" class="btn btn-primary">Find your best area</a>
-      <a href="/best-hotels-athens" class="btn btn-ghost">Compare top picks</a>
+    <div class="hero-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Independent Athens hotel guide</p>
+        <h1>Athens Hotels by Area, View & Budget</h1>
+        <p class="hero-subtitle">Pick the right base before you pick the room: Plaka for classic Athens, Monastiraki for energy, Syntagma for polish, Koukaki for calmer Acropolis access.</p>
+        <div class="hero-actions">
+          <a href="/where-to-stay-in-athens" class="btn btn-primary">Find your best area</a>
+          <a href="/best-hotels-athens" class="btn btn-ghost">Compare top picks</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Athens and the Acropolis">
+        <div class="hero-visual-card">
+          <span>Start here</span>
+          <strong>8 neighborhoods, 33 tracked hotels, one calmer way to choose.</strong>
+        </div>
+      </div>
     </div>
     <div class="hero-stats">
       <div class="stat">
@@ -172,7 +183,7 @@
       </div>
       <div class="stat">
         <span class="stat-value">€143</span>
-        <span class="stat-label">Avg/Night</span>
+        <span class="stat-label">Avg/night</span>
       </div>
     </div>
   </div>
@@ -184,7 +195,7 @@
     <div class="quick-answer">
       <p class="eyebrow">Quick answer</p>
       <h2>For a first Athens trip, start with Plaka, Monastiraki, Syntagma, or Koukaki.</h2>
-      <p>Plaka is the easiest historic base, Monastiraki is best for markets and nightlife, Syntagma is the most connected luxury/business base, and Koukaki is the quieter value pick near the Acropolis. Use the tables below to compare real hotel counts, nightly price signals, rooftop bars, and Acropolis-view options.</p>
+      <p>Plaka is the easiest historic base, Monastiraki is best for markets and nightlife, Syntagma is the most connected luxury/business base, and Koukaki is the quieter value pick near the Acropolis. Use the tables below to compare hotel counts, price signals, rooftop bars, and Acropolis-view options.</p>
       <div class="answer-links">
         <a href="/athens-hotels/plaka">Plaka hotels</a>
         <a href="/athens-hotels/monastiraki">Monastiraki hotels</a>
@@ -199,7 +210,7 @@
 <section class="section section-alt">
   <div class="container">
     <h2 class="section-title">Plan by Decision, Not Just by Hotel Name</h2>
-    <p class="section-subtitle">These guides turn the hotel data into practical choices for common Athens travel searches.</p>
+    <p class="section-subtitle">Fast paths for the decisions travelers actually make before booking.</p>
     <div class="guide-card-grid">
       <a class="guide-card" href="/where-to-stay-in-athens">
         <span class="guide-kicker">Neighborhood guide</span>
@@ -309,8 +320,8 @@
 <!-- Popular Guide Links -->
 <section class="section section-alt">
   <div class="container">
-    <h2 class="section-title">Popular Athens Hotel Searches</h2>
-    <p class="section-subtitle">Purpose-built comparison pages for the highest-value hotel decisions.</p>
+    <h2 class="section-title">Popular Athens Hotel Guides</h2>
+    <p class="section-subtitle">Jump straight to the comparison that matches the trip.</p>
         <div class="guide-link-grid">
       <a class="guide-link" href="/ultra-luxury-athens-villas-suites">
         <span>Money-no-object</span>
@@ -446,12 +457,12 @@
 <!-- Featured: Acropolis Views -->
 <section class="section">
   <div class="container">
-    <h2 class="section-title">🏛️ Hotels with Acropolis Views</h2>
-    <p class="section-subtitle">Wake up to ancient history. These hotels offer stunning views of the Parthenon.</p>
+    <h2 class="section-title">Hotels with Acropolis Views</h2>
+    <p class="section-subtitle">Wake up close to the landmark everyone came to see.</p>
     <div class="hotels-grid">
       
     <a href="/hotel/electra-palace-athens-athens" class="hotel-card" data-tier="luxury" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-plaka" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>Electra Palace Athens</h3>
         <div class="hotel-card-meta">
@@ -469,7 +480,7 @@
     </a>
   
     <a href="/hotel/plaka-hotel-athens" class="hotel-card" data-tier="mid" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-plaka" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>Plaka Hotel</h3>
         <div class="hotel-card-meta">
@@ -487,7 +498,7 @@
     </a>
   
     <a href="/hotel/ava-hotel-athens-athens" class="hotel-card" data-tier="upscale" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-plaka" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>AVA Hotel Athens</h3>
         <div class="hotel-card-meta">
@@ -505,7 +516,7 @@
     </a>
   
     <a href="/hotel/herodion-hotel-athens" class="hotel-card" data-tier="upscale" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-plaka" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>Herodion Hotel</h3>
         <div class="hotel-card-meta">
@@ -523,7 +534,7 @@
     </a>
   
     <a href="/hotel/a-for-athens-athens" class="hotel-card" data-tier="upscale" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-monastiraki" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>A for Athens</h3>
         <div class="hotel-card-meta">
@@ -541,7 +552,7 @@
     </a>
   
     <a href="/hotel/360-degrees-hotel-athens" class="hotel-card" data-tier="mid" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-monastiraki" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>360 Degrees Hotel</h3>
         <div class="hotel-card-meta">
@@ -565,12 +576,12 @@
 <!-- Featured: Rooftop Bars -->
 <section class="section section-alt">
   <div class="container">
-    <h2 class="section-title">🍸 Best Rooftop Bar Hotels</h2>
-    <p class="section-subtitle">Sunset cocktails with a view. The best hotel rooftops in Athens.</p>
+    <h2 class="section-title">Rooftop Bar Hotels</h2>
+    <p class="section-subtitle">Sunset drinks, terrace views, and a better way to end the day.</p>
     <div class="hotels-grid">
       
     <a href="/hotel/electra-palace-athens-athens" class="hotel-card" data-tier="luxury" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-plaka" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>Electra Palace Athens</h3>
         <div class="hotel-card-meta">
@@ -588,7 +599,7 @@
     </a>
   
     <a href="/hotel/ava-hotel-athens-athens" class="hotel-card" data-tier="upscale" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-plaka" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>AVA Hotel Athens</h3>
         <div class="hotel-card-meta">
@@ -606,7 +617,7 @@
     </a>
   
     <a href="/hotel/herodion-hotel-athens" class="hotel-card" data-tier="upscale" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-plaka" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>Herodion Hotel</h3>
         <div class="hotel-card-meta">
@@ -624,7 +635,7 @@
     </a>
   
     <a href="/hotel/a-for-athens-athens" class="hotel-card" data-tier="upscale" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-monastiraki" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>A for Athens</h3>
         <div class="hotel-card-meta">
@@ -642,7 +653,7 @@
     </a>
   
     <a href="/hotel/360-degrees-hotel-athens" class="hotel-card" data-tier="mid" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-monastiraki" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>360 Degrees Hotel</h3>
         <div class="hotel-card-meta">
@@ -660,7 +671,7 @@
     </a>
   
     <a href="/hotel/ob-athens-boutique-hotel-athens" class="hotel-card" data-tier="upscale" data-view="true">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-monastiraki" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>O&B Athens Boutique Hotel</h3>
         <div class="hotel-card-meta">
@@ -751,8 +762,11 @@
   </footer>
 
   <script>
-    document.querySelector('.nav-toggle').addEventListener('click', () => {
-      document.querySelector('.nav').classList.toggle('nav-open');
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
     });
   </script>
 </body>

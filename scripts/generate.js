@@ -386,7 +386,7 @@ const intentGuides = [
     notes: [
       ['Best for design', 'Kolonaki and Plaka are the cleanest starting points for a quieter boutique feel.'],
       ['Best for nightlife', 'Monastiraki and Psyrri make more sense if restaurants, bars, and evenings out are central to the trip.'],
-      ['Data caveat', 'Boutique is treated as a visible style/fit signal, not an award or review ranking.']
+      ['Style caveat', 'Boutique is treated as a visible style/fit signal, not an award or review score.']
     ],
     faqs: [
       ['What counts as a boutique hotel in this guide?', 'Hotels are included when their stored tags, name, or positioning indicate boutique, design, or art-led fit.'],
@@ -425,7 +425,7 @@ const intentGuides = [
     title: 'Hotels in Athens City Centre',
     h1: 'Hotels in Athens City Centre',
     hero: 'Compare central Athens hotel areas for sightseeing, metro access, nightlife, shopping, and first-trip convenience.',
-    quickH2: 'Athens city-centre hotel searches should start with Plaka, Monastiraki, Syntagma, Koukaki, Psyrri, and Kolonaki.',
+    quickH2: 'For Athens city-centre hotels, start with Plaka, Monastiraki, Syntagma, Koukaki, Psyrri, and Kolonaki.',
     quickP: 'Those areas cover the strongest central use cases: old-city atmosphere, markets and metro, luxury transport connections, quieter Acropolis access, nightlife, and polished cafes/shopping.',
     description: 'Compare hotels in Athens city centre by neighborhood, price signal, Acropolis access, rooftop bar, and traveler fit.',
     caption: 'Central Athens hotels compared across the tracked city-centre neighborhoods.',
@@ -644,7 +644,7 @@ function generateHotelCard(hotel) {
   
   return `
     <a href="/hotel/${hotel.slug}" class="hotel-card" data-tier="${getPriceTier(hotel.pricePerNight)}" data-view="${hotel.hasAcropolisView}">
-      <div class="hotel-card-image">🏨</div>
+      <div class="hotel-card-image hotel-card-image-${escapeHtml(hotel.neighborhood)}" aria-hidden="true"></div>
       <div class="hotel-card-content">
         <h3>${hotel.name}</h3>
         <div class="hotel-card-meta">
@@ -1488,7 +1488,7 @@ function generateGuidePages() {
     <section class="section section-alt" id="luxe-shortlist">
       <div class="container">
         <h2 class="section-title">Ultra-Luxury Athens Shortlist</h2>
-        <p class="section-subtitle">A source-backed comparison of the stays that actually feel headline-level, not just expensive.</p>
+        <p class="section-subtitle">The stays that actually feel headline-level, not just expensive.</p>
         <div class="table-wrap">
           <table class="comparison-table luxe-table">
             <thead>
@@ -1544,7 +1544,7 @@ function generateGuidePages() {
           <article class="area-panel">
             <div>
               <h3>Helicopter transfer</h3>
-              <p>Current private-aviation SERPs show Athens-based resort transfers as a real ultra-luxury add-on. Fly G Aviation publishes Greece luxury-resort helicopter transfers of 35-90 minutes from EUR2,350 per aircraft, with aircraft, luggage, weather, and landing permissions to confirm.</p>
+              <p>Athens-based resort transfers can become part of the trip itself. Fly G Aviation publishes Greece luxury-resort helicopter transfers of 35-90 minutes from EUR2,350 per aircraft, with aircraft, luggage, weather, and landing permissions to confirm.</p>
             </div>
             <dl class="signal-list">
               <div><dt>Best for</dt><dd>Amanzoe, island hops, tight schedules</dd></div>
@@ -1592,7 +1592,7 @@ function generateGuidePages() {
       <div class="container">
         <h2 class="section-title">Sources and Reality Check</h2>
         <div class="methodology">
-          <p>This page uses current web research plus official hotel/resort pages checked on May 30, 2026. Public pages for the very top villas often use enquiry or check-rate flows rather than publishing a stable nightly rate. Rate figures marked as reported come from luxury-travel publishers and should be treated as directional until confirmed directly with the property or a top-tier travel advisor.</p>
+          <p>This page uses official hotel/resort pages checked on May 30, 2026, plus current luxury-travel rate references where public property pages use enquiry or check-rate flows. Rate figures marked as reported should be treated as directional until confirmed directly with the property or a top-tier travel advisor.</p>
           <div class="answer-links guide-nearby-links">
             ${ultraSources.map(([label, url]) => `<a href="${url}">${escapeHtml(label)}</a>`).join('')}
           </div>
@@ -1701,7 +1701,7 @@ function generateGuidePages() {
         <div class="container">
           <h2 class="section-title">Source and Selection Notes</h2>
           <div class="methodology">
-            <p>Hotels are included when their stored Hotels of Athens fields match this page’s criteria. The page does not use unsupported review scores, fake rankings, or invented live availability. Treat prices as directional signals and confirm live rates, room type, cancellation terms, access rules, and views before booking.</p>
+            <p>Hotels are included when their Hotels of Athens fields match this page’s criteria. The page does not use unsupported review scores or invented live availability. Treat prices as directional signals and confirm live rates, room type, cancellation terms, access rules, and views before booking.</p>
           </div>
           <div class="answer-links guide-nearby-links">${nearbyLinks}</div>
         </div>

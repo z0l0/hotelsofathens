@@ -156,7 +156,7 @@
         <span class="logo-icon">🏛️</span>
         <span class="logo-text">Hotels of Athens</span>
       </a>
-      <nav class="nav">
+      <nav class="nav" id="site-nav">
         <a href="/where-to-stay-in-athens">Where to Stay</a>
         <a href="/best-hotels-athens">Best Hotels</a>
         <a href="/athens-hotels/plaka">Neighborhoods</a>
@@ -164,7 +164,7 @@
         <a href="/ultra-luxury-athens-villas-suites">Ultra Luxe</a>
         <a href="/best-rooftop-bars-athens">Rooftops</a>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">☰</button>
     </div>
   </header>
 
@@ -202,7 +202,7 @@
     <section class="section section-alt" id="luxe-shortlist">
       <div class="container">
         <h2 class="section-title">Ultra-Luxury Athens Shortlist</h2>
-        <p class="section-subtitle">A source-backed comparison of the stays that actually feel headline-level, not just expensive.</p>
+        <p class="section-subtitle">The stays that actually feel headline-level, not just expensive.</p>
         <div class="table-wrap">
           <table class="comparison-table luxe-table">
             <thead>
@@ -298,7 +298,7 @@
           <article class="area-panel">
             <div>
               <h3>Helicopter transfer</h3>
-              <p>Current private-aviation SERPs show Athens-based resort transfers as a real ultra-luxury add-on. Fly G Aviation publishes Greece luxury-resort helicopter transfers of 35-90 minutes from EUR2,350 per aircraft, with aircraft, luggage, weather, and landing permissions to confirm.</p>
+              <p>Athens-based resort transfers can become part of the trip itself. Fly G Aviation publishes Greece luxury-resort helicopter transfers of 35-90 minutes from EUR2,350 per aircraft, with aircraft, luggage, weather, and landing permissions to confirm.</p>
             </div>
             <dl class="signal-list">
               <div><dt>Best for</dt><dd>Amanzoe, island hops, tight schedules</dd></div>
@@ -346,7 +346,7 @@
       <div class="container">
         <h2 class="section-title">Sources and Reality Check</h2>
         <div class="methodology">
-          <p>This page uses current web research plus official hotel/resort pages checked on May 30, 2026. Public pages for the very top villas often use enquiry or check-rate flows rather than publishing a stable nightly rate. Rate figures marked as reported come from luxury-travel publishers and should be treated as directional until confirmed directly with the property or a top-tier travel advisor.</p>
+          <p>This page uses official hotel/resort pages checked on May 30, 2026, plus current luxury-travel rate references where public property pages use enquiry or check-rate flows. Rate figures marked as reported should be treated as directional until confirmed directly with the property or a top-tier travel advisor.</p>
           <div class="answer-links guide-nearby-links">
             <a href="https://www.oneandonlyresorts.com/aesthesis/accommodation/villa-one">One&amp;Only Aesthesis Villa One</a><a href="https://www.oneandonlyresorts.com/aesthesis/private-homes/stays/three-bedroom">One&amp;Only Aesthesis Three-Bedroom Villa</a><a href="https://www.fourseasons.com/athens/accommodations/specialty-suites/arion-presidential-suite/">Four Seasons Astir Palace Arion Presidential Suite</a><a href="https://www.marriott.com/luxury/signature-accommodations/hotel-grande-bretagne-athens">Hotel Grande Bretagne Royal Suite</a><a href="https://www.aman.com/resorts/amanzoe/accommodation/villas">Amanzoe Villas</a><a href="https://www.aman.com/resorts/amanzoe/accommodation/villa/villa-20">Amanzoe Villa 20</a><a href="https://www.lagonissiresort.gr/accommodation/athens-luxury-royal-villa/">Grand Resort Lagonissi Royal Villa</a><a href="https://flyg.gr/blog/6676-private-helicopter-access-to-greece%E2%80%99s-top-luxury-resorts.html">Fly G Aviation helicopter resort transfers</a><a href="https://elitetraveler.com/suites/17017/villa-20">Elite Traveler Villa 20 rate reference</a><a href="https://suitesandvillas.com/suites/villa/amanzoe-villa-20">Suites &amp; Villas Villa 20 rate reference</a>
           </div>
@@ -428,8 +428,11 @@
   </footer>
 
   <script>
-    document.querySelector('.nav-toggle').addEventListener('click', () => {
-      document.querySelector('.nav').classList.toggle('nav-open');
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
     });
   </script>
 </body>

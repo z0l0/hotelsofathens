@@ -61,7 +61,7 @@
         <span class="logo-icon">🏛️</span>
         <span class="logo-text">Hotels of Athens</span>
       </a>
-      <nav class="nav">
+      <nav class="nav" id="site-nav">
         <a href="/where-to-stay-in-athens">Where to Stay</a>
         <a href="/best-hotels-athens">Best Hotels</a>
         <a href="/athens-hotels/plaka">Neighborhoods</a>
@@ -69,7 +69,7 @@
         <a href="/ultra-luxury-athens-villas-suites">Ultra Luxe</a>
         <a href="/best-rooftop-bars-athens">Rooftops</a>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">☰</button>
     </div>
   </header>
 
@@ -178,8 +178,11 @@
   </footer>
 
   <script>
-    document.querySelector('.nav-toggle').addEventListener('click', () => {
-      document.querySelector('.nav').classList.toggle('nav-open');
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
     });
   </script>
 </body>
