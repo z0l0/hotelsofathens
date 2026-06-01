@@ -1954,6 +1954,39 @@ h3 {
   border-radius: 14px;
 }
 
+.checklist-grid {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.check-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  align-items: start;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid rgba(23, 32, 51, 0.10);
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(23, 32, 51, 0.05);
+}
+
+.check-item p {
+  margin: 0;
+}
+
+.check-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 1.45rem;
+  height: 1.45rem;
+  color: #fff;
+  background: #1d6f65;
+  border-radius: 999px;
+  font-weight: 800;
+  line-height: 1;
+}
+
 .footer {
   background: #111827;
 }
@@ -1988,7 +2021,8 @@ h3 {
   }
 
   .guide-card-grid,
-  .content-grid {
+  .content-grid,
+  .checklist-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
