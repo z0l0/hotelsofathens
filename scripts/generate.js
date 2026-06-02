@@ -36,15 +36,52 @@ const lastUpdated = allHotelsData.lastUpdated || new Date().toISOString().split(
 function wrapInLayout(content, title, description, url, options = {}) {
   const fullTitle = title.includes('Hotels of Athens') ? title : `${title} | Hotels of Athens`;
   const schema = buildStructuredData(options.schema || []);
+  const urlPath = url.replace(siteUrl, '') || '/';
 
   return layoutTemplate
+    .replace(/\{\{HTML_LANG\}\}/g, options.lang || 'en')
     .replace(/\{\{PAGE_TITLE\}\}/g, title)
     .replace(/\{\{FULL_PAGE_TITLE\}\}/g, fullTitle)
     .replace(/\{\{PAGE_DESCRIPTION\}\}/g, description)
     .replace(/\{\{PAGE_URL\}\}/g, url)
+    .replace('{{HREFLANG_LINKS}}', buildHreflangLinks(urlPath, options.lang || 'en'))
+    .replace('{{LANGUAGE_SELECTOR}}', buildLanguageSelector(urlPath, options.lang || 'en'))
     .replace(/\{\{OG_TYPE\}\}/g, options.ogType || 'website')
     .replace('{{STRUCTURED_DATA}}', schema)
     .replace('{{CONTENT}}', content);
+}
+
+function localizedPath(lang, urlPath) {
+  const cleanPath = urlPath === '/' ? '/' : `/${urlPath.replace(/^\/+/, '').replace(/\.html$/, '')}`;
+  if (lang === 'en') return cleanPath;
+  return cleanPath === '/' ? `/${lang}/` : `/${lang}${cleanPath}`;
+}
+
+function buildHreflangLinks(urlPath, activeLang = 'en') {
+  const langs = [
+    ['en', localizedPath('en', urlPath)],
+    ['de', localizedPath('de', urlPath)],
+    ['el', localizedPath('el', urlPath)]
+  ];
+  return [
+    ...langs.map(([lang, href]) => `<link rel="alternate" hreflang="${lang}" href="${siteUrl}${href}">`),
+    `<link rel="alternate" hreflang="x-default" href="${siteUrl}${localizedPath('en', urlPath)}">`
+  ].join('\n  ');
+}
+
+function buildLanguageSelector(urlPath, activeLang = 'en') {
+  const languages = [
+    ['en', 'English'],
+    ['de', 'Deutsch'],
+    ['el', 'Ελληνικά']
+  ];
+  return `
+      <div class="language-selector" aria-label="Language selector">
+        ${languages.map(([lang, label]) => {
+          const active = lang === activeLang ? ' aria-current="true"' : '';
+          return `<a href="${localizedPath(lang, urlPath)}" hreflang="${lang}" lang="${lang}"${active}>${label}</a>`;
+        }).join('')}
+      </div>`;
 }
 
 function escapeHtml(value) {
